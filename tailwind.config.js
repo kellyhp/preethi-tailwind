@@ -11,8 +11,12 @@ module.exports = {
         purple: "#6B0058",
         yellow: "#CC9D2F",
         "dark-yellow": "#FFC956",
-        white: "#EDE3D4"
+        white: "#EDE3D4",
+        black: "#1A202C"
       },
+      backgroundImage: {
+        'hero-pattern': "url('./assets/hero.png')",
+      }
     },
   },
   plugins: [],
