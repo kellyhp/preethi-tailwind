@@ -1,23 +1,7 @@
 "use client";
 import { useState } from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import Link from 'next/link';
 import useMediaQuery from "../hooks/useMediaQuery";
-
-const Link = ({page, selectedPage, setSelectedPage}) => {
-    const lowerCasePage = page.toLowerCase();
-    return (
-        <AnchorLink
-          className={`${
-            selectedPage === lowerCasePage ? "text-yellow" : ""
-          } hover:text-yellow transition duration-500`}
-          href={`#${lowerCasePage}`}
-          onClick={() => setSelectedPage(lowerCasePage)}
-        >
-          {page}
-        </AnchorLink>
-      )
-}
-
 
 const Navbar = ()  => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
@@ -26,31 +10,17 @@ const Navbar = ()  => {
     return(
         <nav className = {`bg-purple z-40 w-full fixed top-0 py-4`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
-            <h4 className="font-dmserifdisplay text-3l font-bold"></h4>
+            <h4 className="font-unna text-3l font-bold"></h4>
             {/* DESKTOP NAV */}
             {isAboveSmallScreens ? (
                 <div className="text-white flex justify-between gap-16 items-center font-unna text-sm font-bold">
-                    <Link
-                        page = "Home" />
-                    <Link
-                        page = "Catering"
-                    />
-                    <Link
-                        page = "Buffet"
-                    
-                    />
-                    <Link
-                        page = "Menu"
-                     
-                    />
-                    <Link
-                        page = "Contact"
-                     
-                    />
-                     <button className = "rounded-full bg-yellow p-3" > 
-                     <Link
-                        page = "Order Online" 
-                    />
+                    <Link href="/" className="hover:text-yellow transition duration-500"> Home </Link>
+                    <Link href="/catering" className="hover:text-yellow transition duration-500"> Catering </Link>
+                    <Link href="/buffet" className="hover:text-yellow transition duration-500"> Buffet </Link>
+                    <Link href="/menu" className="hover:text-yellow transition duration-500"> Menu </Link>
+                    <Link href="/contact" className="hover:text-yellow transition duration-500"> Contact </Link>
+                     <button className = "rounded-full bg-yellow p-3 hover:text-yellow hover:bg-white transition duration-500" > 
+                     <Link href="/order"> Order Online </Link>
                      </button>
                 </div>
             ) : ( <button className="rounded-full bg-purple p-2" 
@@ -73,38 +43,18 @@ const Navbar = ()  => {
                  </div>
                   {/* MENU ITEMS */}
                   <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white"> 
-                  <Link
-                        page = "Home"
-                    
-                    />
-                    <Link
-                        page = "Catering"
-                     
-                    />
-                    <Link
-                        page = "Buffet"
-                    
-                    />
-                    <Link
-                        page = "Menu"
-                     
-                    />
-                    <Link
-                        page = "Contact"
-                     
-                    />
-                    <Link
-                        page = "Order Online"
-                     
-                    />
+                  <Link href="/" className="hover:text-yellow transition duration-500">Home</Link>
+                  <Link href="/catering" className="hover:text-yellow transition duration-500">Catering</Link>
+                  <Link href="/buffet" className="hover:text-yellow transition duration-500">Buffet</Link>
+                  <Link href="/menu" className="hover:text-yellow transition duration-500">Menu</Link>
+                  <Link href="/contact" className="hover:text-yellow transition duration-500">Contact</Link>
+                  <Link href="/order" className="hover:text-yellow transition duration-500">Order</Link>
                   </div>
                 </div>
             )}
-
             </div>
         </nav>
     )
-
 }
 
 export default Navbar;
