@@ -1,6 +1,8 @@
 "use client"
 import useMediaQuery from "../hooks/useMediaQuery";
 import Image from 'next/image'
+import { Center, Button, Text} from "@mantine/core";
+
 const Homepage = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
     return (
@@ -9,7 +11,36 @@ const Homepage = () => {
         <div id="hero" className="md:flex md:justify-between 
         md:items-center md:h-full py-10 bg-hero-pattern bg-cover w-full
         min-h-[400px] md:min-h-[600px]">
-            {/* Add two buttons, two divs, image */}
+            <div style={{width: "80vw", margin: "0 auto"}}>
+                    <div style={{backgroundColor: 'rgba(255, 255, 255, 0.7)', paddingTop: 20}}>
+                        <div style={{display: "flex", flexDirection: "row", marginLeft: 120, marginTop: 20}}>
+                            <div style={{width: 230, height: 230, marginTop: 60, borderTop: "1px solid #6B0058", borderBottom: "1px solid #6B0058"}}>
+                                <div style={{marginTop: 50}}>
+                                    <Text style={{fontFamily: "Unna", fontSize: 20, fontWeight: 700, textAlign: "center"}}>Buffet Hours</Text>
+                                    <Text style={{fontFamily: "Unna", fontSize: 20, fontWeight: 700, textAlign: "center"}}>11:00 am to 3:00 pm</Text>
+                                    <Text style={{fontFamily: "Unna", fontSize: 20, fontWeight: 700, textAlign: "center"}}>Dinner Hours</Text>
+                                    <Text style={{fontFamily: "Unna", fontSize: 20, fontWeight: 700, textAlign: "center"}}>5:00 pm to 10:00 pm</Text>                                
+                                </div>
+                            </div>
+                            <div style={{alignItems: "center"}}>
+                                <Center>
+                                    <Image src= {require("../assets/preethi-logo.png")} width={500} height={400}></Image>
+                                </Center>
+                                <Center style={{padding: "10px 20px", display: "flex", flexDirection: "row", gap: 24}}>
+                                    <Button style={{fontFamily: "Unna", fontsize: 16, height: 40, width: 180, borderRadius: 50, background: "#6B0058"}}>Explore Our Menu</Button>
+                                    <Button style={{fontFamily: "Unna", fontsize: 16, height: 40, width: 180, borderRadius: 50, background: "#6B0058"}}>Our Buffet Menu</Button>
+                                </Center>
+                            </div>
+                            <div style={{width: 230, height: 230, marginTop: 60, borderTop: "1px solid #6B0058", borderBottom: "1px solid #6B0058"}}>
+                                <div style={{marginTop: 60}}>
+                                    <Text style={{fontFamily: "Unna", fontSize: 20, fontWeight: 700, textAlign: "center"}}>Open Daily</Text>
+                                    <Text style={{fontFamily: "Unna", fontSize: 20, fontWeight: 700, textAlign: "center"}}>715 2nd St, Davis,</Text>
+                                    <Text style={{fontFamily: "Unna", fontSize: 20, fontWeight: 700, textAlign: "center"}}>CA, 95616</Text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
         {/* OUR PROCESS  */}
         <div className="w-5/6 mx-auto md:h-full mt-10">
