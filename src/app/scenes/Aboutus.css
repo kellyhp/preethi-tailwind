@@ -1,0 +1,77 @@
+/* About us start */
+.ourstory {
+  color: #6b0058;
+  font-family: "Sunflower";
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 1%;
+  margin-bottom: 10%;
+}
+
+.about_us {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.left-half,
+.right-half {
+  margin: 10%;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/* General Classes */
+.title {
+  color: #6b0058;
+  font-family: "Sunflower";
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 5%;
+}
+
+.text {
+  color: #000000;
+  font-family: "Sunflower";
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5%;
+}
+/* Image Positions */
+/* Image 1 */
+.chopped_greens {
+  position: relative;
+  top: 8%;
+  right: -50%;
+}
+
+.chopped_greens1 {
+  position: relative;
+  top: -38%;
+  right: 40%;
+}
+
+.chopped_greens2 {
+  position: relative;
+  top: -58.75%;
+  right: 37%;
+}
+
+/* Image 2 */
+.sliced_tomato {
+  position: relative;
+  top: -22%;
+  left: -35%;
+}
+
+.sliced_tomato1 {
+  position: relative;
+  top: -37%;
+  right: -42%;
+}
+
+.sliced_tomato2 {
+  position: relative;
+  top: -71%;
+  right: -48%;
+}
