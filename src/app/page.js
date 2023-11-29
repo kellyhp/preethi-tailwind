@@ -5,10 +5,10 @@ import Homepage from "./scenes/Homepage";
 
 export default function Home() {
   return (
-    <main className="bg-white flex min-h-screen">
+    <main className="bg-white min-h-full">
       <Navbar />
       <Homepage />
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }

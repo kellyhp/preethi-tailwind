@@ -2,12 +2,11 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import Image from "next/image";
 import { Center, Button, Text } from "@mantine/core";
-import "./Aboutus.css";
 
 const Homepage = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <div className="w-full mx-auto md:h-full">
+    <div className="w-full mx-auto md:h-full bg-white">
       {/* HERO SECTION   */}
       <div
         id="hero"
@@ -179,7 +178,7 @@ const Homepage = () => {
             src={require("../assets/flower.png")}
           />
           <p
-            className="text-3xl font-unna flex text-center justify-center items-center
+            className="text-5xl font-unna flex text-center justify-center items-center
                 text-purple font-bold"
           >
             {" "}
@@ -191,7 +190,7 @@ const Homepage = () => {
             src={require("../assets/flower.png")}
           />
         </div>
-        <p className="mb-5 text-sm font-unna text-center text-purple font-bold">
+        <p className="mb-5 text-base font-unna text-center text-purple font-bold">
           SAVOR THE AUTHENTICITY
         </p>
         <div className="flex flex-wrap justify-between">
@@ -210,8 +209,8 @@ const Homepage = () => {
                 />
               </div>
               <div className="px-8 md:px-16">
-                <p className="mt-5 mb-5 font-bold text-base"> Organic </p>
-                <p>
+                <p className="mt-5 mb-5 font-bold text-2xl"> Organic </p>
+                <p className="text-lg">
                   We take pride in every dish, drink, dosa, and dessert we make
                   and use organic ingredients
                 </p>
@@ -234,8 +233,8 @@ const Homepage = () => {
                 />
               </div>
               <div className="px-8 md:px-16">
-                <p className="mt-5 mb-5 font-bold text-base"> Homemade </p>
-                <p>
+                <p className="mt-5 mb-5 font-bold text-2xl"> Homemade </p>
+                <p className="text-lg">
                   Our two primary chefs are made up of a husband and wife team
                   who lovingly make homemade dishes
                 </p>
@@ -258,14 +257,77 @@ const Homepage = () => {
                 />
               </div>
               <div className="px-8 md:px-16">
-                <p className="mt-5 mb-5 font-bold text-base"> Made-To-Order </p>
-                <p>
+                <p className="mt-5 mb-5 font-bold text-2xl"> Made-To-Order </p>
+                <p className="text-lg">
                   Each individual dish are made-to-order and prepared correctly
                   according to traditions
                 </p>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      {/* ABOUT US */}
+      <div className="md:flex md:justify-between 
+        md:items-center gap-16 py-10 w-5/6 mx-auto md:h-full">
+        <div className="md:w-1/3 justify-center items-center md:items-start md:justify-start w-full">
+          <Image 
+          alt="about-icon"
+          className="max-w-[50px] max-h-[50px]"
+          src={require("../assets/about-icon.png")}/>
+          <Text className="mt-5 text-base font-unna text-center md:text-start text-purple font-bold">OUR STORY</Text>
+          <Text className="mt-5 text-5xl font-unna text-center md:text-start text-purple font-bold">About Us</Text>
+          <Text className="mt-5 mb-7 text-lg text-center md:text-start font-unna">
+            We are a family owned restaurant with over 25 years of experience
+            creating authentic, southern and northern regional dishes that honor
+            traditional centuries-old family recipes.
+          </Text>
+          <Text className="mt-5 mb-7 text-lg text-center md:text-start font-unna">
+            We offer a daily lunch buffet full of deliciously familiar dishes
+            including Dosas, and an intriguing and diverse dinner menu full of
+            homemade regional cuisines that reflect the natural ethnic mixture
+            of authentic spices and flavors of each area.
+          </Text>
+        </div>
+        <div className="flex flex-wrap justify-between">
+        <div className="mt-5 md:mt-10 py-10 w-1/2">
+          {isAboveMediumScreens ? (
+            <div>
+               <Image
+            alt= "about-1"
+            className="max-w-[200px]
+                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+            src={require("../assets/about-1.png")}
+          />
+            </div>
+          ) : (
+            <Image
+            alt= "about-1"
+            className="max-w-[200px] 
+                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+            src={require("../assets/about-1.png")}
+          />
+          )}
+        </div>
+        <div className="mt-5 md:mt-10 py-10 w-1/2">
+          {isAboveMediumScreens ? (
+            <div>
+                <Image
+            alt= "about-2"
+            className="max-w-[200px]
+                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+            src={require("../assets/about-2.png")}
+          />
+            </div>
+          ) : (
+            <Image
+            alt= "about-2"
+            className="max-w-[200px] 
+                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+            src={require("../assets/about-2.png")}
+          />
+          )}
+        </div>
         </div>
       </div>
       {/* CATERING SECTION   */}
@@ -302,13 +364,13 @@ const Homepage = () => {
               src={require("../assets/van.png")}
             />
           </div>
-          <p className="mt-5 text-3xl font-unna text-center md:text-start text-purple font-bold">
+          <p className="mt-5 text-5xl font-unna text-center md:text-start text-purple font-bold">
             Catering Events
           </p>
-          <p className="mt-5 text-sm font-unna text-center md:text-start text-purple font-bold">
+          <p className="mt-5 text-base font-unna text-center md:text-start text-purple font-bold">
             FOR THE SWEETEST MOMENTS IN LIFE
           </p>
-          <p className="mt-5 mb-7 text-base text-center md:text-start font-unna">
+          <p className="mt-5 mb-7 text-lg text-center md:text-start font-unna">
             We take pride in hosting events of any size with a passion for
             creating <br />
             unforgettable moments. Whether you're planning an intimate <br />
@@ -318,57 +380,13 @@ const Homepage = () => {
           </p>
           <div className="w-full justify-center flex items-center md:items-start md:justify-start">
             <button
-              className="mt-5 text-base text-center font-unna font-bold text-purple
+              className="mt-5 text-lg text-center font-unna font-bold text-purple bg-white
                         hover:bg-purple hover:text-white  py-2 px-4 rounded-full transition duration-300
                         border border-purple"
             >
               Our Catering Services
             </button>
           </div>
-        </div>
-      </div>
-      <div className="about_us">
-        <div className="left-half">
-          <Image src={require("../assets/our_story_preface.png")}></Image>
-          <Text className="ourstory">OUR STORY</Text>
-          <Text className="title">About us</Text>
-          <Text className="text">
-            We are a family owned restaurant with over 25 years of experience
-            creating authentic, southern and northern regional dishes that honor
-            traditional centuries-old family recipes.
-          </Text>
-          <Text className="text">
-            We offer a daily lunch buffet full of deliciously familiar dishes
-            including Dosas, and an intriguing and diverse dinner menu full of
-            homemade regional cuisines that reflect the natural ethnic mixture
-            of authentic spices and flavors of each area.
-          </Text>
-        </div>
-        <div className="right-half">
-          <Image
-            className="chopped_greens"
-            src={require("../assets/chopped_greens.png")}
-          ></Image>
-          <Image
-            className="sliced_tomato"
-            src={require("../assets/slicing_tomato.png")}
-          ></Image>
-          <Image
-            className="chopped_greens1"
-            src={require("../assets/Ellipse 5.png")}
-          ></Image>
-          <Image
-            className="sliced_tomato1"
-            src={require("../assets/Ellipse 5.png")}
-          ></Image>
-          <Image
-            className="chopped_greens2"
-            src={require("../assets/curly_frame.png")}
-          ></Image>
-          <Image
-            className="sliced_tomato2"
-            src={require("../assets/curly_frame.png")}
-          ></Image>
         </div>
       </div>
     </div>

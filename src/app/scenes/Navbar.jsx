@@ -13,7 +13,7 @@ const Navbar = ()  => {
             <h4 className="font-unna text-3l font-bold"></h4>
             {/* DESKTOP NAV */}
             {isAboveSmallScreens ? (
-                <div className="text-white flex justify-between gap-16 items-center font-unna text-sm font-bold">
+                <div className="text-white flex justify-between gap-16 items-center font-unna text-base font-bold">
                     <Link href="/" className="hover:text-yellow transition duration-500"> Home </Link>
                     <Link href="/catering" className="hover:text-yellow transition duration-500"> Catering </Link>
                     <Link href="/buffet" className="hover:text-yellow transition duration-500"> Buffet </Link>
