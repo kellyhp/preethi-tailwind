@@ -171,7 +171,7 @@ const Homepage = () => {
         </div>
       </div>
       {/* OUR PROCESS  */}
-      <div className="w-5/6 mx-auto md:h-full mt-10">
+      <div className="w-5/6 mx-auto md:h-full mt-10 py-10">
         <div className="flex flex-row space-x-5 justify-center items-center text-center mb-5">
           <Image
             alt="flower"
@@ -272,10 +272,12 @@ const Homepage = () => {
       <div className="md:flex md:justify-between 
         md:items-center gap-16 py-10 w-5/6 mx-auto md:h-full">
         <div className="md:w-1/3 justify-center items-center md:items-start md:justify-start w-full">
-          <Image 
-          alt="about-icon"
-          className="max-w-[40px] max-h-[77px]"
-          src={require("../assets/about-icon.png")}/>
+          <div className="flex justify-center items-center md:items-start md:justify-start">
+            <Image 
+              alt="about-icon"
+              className="w-[40px] h-[30px]"
+              src={require("../assets/about-icon.png")}/>
+          </div>
           <Text className="mt-5 text-base font-unna text-center md:text-start text-purple font-bold">OUR STORY</Text>
           <Text className="mt-5 text-5xl font-unna text-center md:text-start text-purple font-bold">About Us</Text>
           <Text className="mt-5 mb-7 text-lg text-center md:text-start font-unna">
@@ -291,7 +293,7 @@ const Homepage = () => {
           </Text>
         </div>
         <div className="flex flex-wrap justify-between">
-        <div className="mt-5 md:mt-10 py-10 w-1/2">
+        <div className="mt-5 md:mt-10 w-1/2">
           {isAboveMediumScreens ? (
             <div>
                <Image
@@ -310,7 +312,7 @@ const Homepage = () => {
           />
           )}
         </div>
-        <div className="mt-5 md:mt-10 py-10 w-1/2">
+        <div className="mt-5 w-1/2 md:mt-[200px]">
           {isAboveMediumScreens ? (
             <div>
                 <Image
