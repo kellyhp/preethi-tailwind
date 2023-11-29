@@ -18,8 +18,8 @@ const Footer = () => {
               <div className="justify-start">
                 <p className="font-bold text-lg mt-5 mb-5 border-y-2 border-dark-yellow"> CONTACT </p>
                 <p> 715 2nd St, Davis, CA , 95616 </p>
-                <p><span className="font-bold text-dark-yellow">Call: </span> 530-759-2040</p>
-                <p><span className="font-bold text-dark-yellow">Email: </span>PreethiindianD@gmail.com</p>
+                <p><span className="font-bold text-yellow">Call: </span> 530-759-2040</p>
+                <p><span className="font-bold text-yellow">Email: </span>PreethiindianD@gmail.com</p>
               </div>
             </div>
           </div>
@@ -27,8 +27,8 @@ const Footer = () => {
             <div className="flex font-unna text-white justify-start items-start text-start">
               <div className="justify-start">
                 <p className="font-bold text-lg mt-5 mb-5 border-y-2 border-dark-yellow"> WORKING HOURS </p>
-                <p><span className="font-bold text-dark-yellow">Buffet: </span> 11:00 am to 3:00 pm </p>
-                <p><span className="font-bold text-dark-yellow">Dinner: </span> 5:00 pm to 10:00 pm </p>
+                <p><span className="font-bold text-yellow">Buffet: </span> 11:00 am to 3:00 pm </p>
+                <p><span className="font-bold text-yellow">Dinner: </span> 5:00 pm to 10:00 pm </p>
               </div>
             </div>
           </div>

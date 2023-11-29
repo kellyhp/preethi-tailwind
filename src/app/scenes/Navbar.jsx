@@ -14,12 +14,12 @@ const Navbar = ()  => {
             {/* DESKTOP NAV */}
             {isAboveSmallScreens ? (
                 <div className="text-white flex justify-between gap-16 items-center font-unna text-base font-bold">
-                    <Link href="/" className="hover:text-yellow transition duration-500"> Home </Link>
-                    <Link href="/catering" className="hover:text-yellow transition duration-500"> Catering </Link>
-                    <Link href="/buffet" className="hover:text-yellow transition duration-500"> Buffet </Link>
-                    <Link href="/menu" className="hover:text-yellow transition duration-500"> Menu </Link>
-                    <Link href="/contact" className="hover:text-yellow transition duration-500"> Contact </Link>
-                     <button className = "rounded-full bg-yellow p-3 hover:text-yellow hover:bg-white transition duration-500" > 
+                    <Link href="/" className="hover:text-dark-yellow transition duration-500"> Home </Link>
+                    <Link href="/catering" className="hover:text-dark-yellow transition duration-500"> Catering </Link>
+                    <Link href="/buffet" className="hover:text-dark-yellow transition duration-500"> Buffet </Link>
+                    <Link href="/menu" className="hover:text-dark-yellow transition duration-500"> Menu </Link>
+                    <Link href="/contact" className="hover:text-dark-yellow transition duration-500"> Contact </Link>
+                     <button className = "rounded-full bg-dark-yellow p-3 hover:text-dark-yellow hover:bg-white transition duration-500" > 
                      <Link href="/order"> Order Online </Link>
                      </button>
                 </div>
@@ -43,12 +43,12 @@ const Navbar = ()  => {
                  </div>
                   {/* MENU ITEMS */}
                   <div className="flex flex-col gap-10 ml-[33%] text-2xl text-white"> 
-                  <Link href="/" className="hover:text-yellow transition duration-500">Home</Link>
-                  <Link href="/catering" className="hover:text-yellow transition duration-500">Catering</Link>
-                  <Link href="/buffet" className="hover:text-yellow transition duration-500">Buffet</Link>
-                  <Link href="/menu" className="hover:text-yellow transition duration-500">Menu</Link>
-                  <Link href="/contact" className="hover:text-yellow transition duration-500">Contact</Link>
-                  <Link href="/order" className="hover:text-yellow transition duration-500">Order</Link>
+                  <Link href="/" className="hover:text-dark-yellow transition duration-500">Home</Link>
+                  <Link href="/catering" className="hover:text-dark-yellow transition duration-500">Catering</Link>
+                  <Link href="/buffet" className="hover:text-dark-yellow transition duration-500">Buffet</Link>
+                  <Link href="/menu" className="hover:text-dark-yellow transition duration-500">Menu</Link>
+                  <Link href="/contact" className="hover:text-dark-yellow transition duration-500">Contact</Link>
+                  <Link href="/order" className="hover:text-dark-yellow transition duration-500">Order</Link>
                   </div>
                 </div>
             )}

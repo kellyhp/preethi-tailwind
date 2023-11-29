@@ -2,6 +2,7 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import Image from "next/image";
 import { Center, Button, Text } from "@mantine/core";
+import Link from 'next/link';
 
 const Homepage = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -273,7 +274,7 @@ const Homepage = () => {
         <div className="md:w-1/3 justify-center items-center md:items-start md:justify-start w-full">
           <Image 
           alt="about-icon"
-          className="max-w-[50px] max-h-[50px]"
+          className="max-w-[40px] max-h-[77px]"
           src={require("../assets/about-icon.png")}/>
           <Text className="mt-5 text-base font-unna text-center md:text-start text-purple font-bold">OUR STORY</Text>
           <Text className="mt-5 text-5xl font-unna text-center md:text-start text-purple font-bold">About Us</Text>
@@ -379,6 +380,7 @@ const Homepage = () => {
             catering needs covered!
           </p>
           <div className="w-full justify-center flex items-center md:items-start md:justify-start">
+            <Link href="/catering">
             <button
               className="mt-5 text-lg text-center font-unna font-bold text-purple bg-white
                         hover:bg-purple hover:text-white  py-2 px-4 rounded-full transition duration-300
@@ -386,6 +388,7 @@ const Homepage = () => {
             >
               Our Catering Services
             </button>
+            </Link>
           </div>
         </div>
       </div>
