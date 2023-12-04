@@ -121,3 +121,44 @@ button:disabled {
     min-width: initial;
   }
 }
+
+/* Contact Page */
+#catering {
+  background-color: #6b0058;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.header {
+  font-family: "Unna";
+  font-size: 48px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+.grid-item {
+  padding: 10%;
+  text-align: center;
+  align-items: center;
+  font-family: "Unna";
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.grid-title {
+  font-family: "Unna";
+  color: #ffc956;
+}
+
+#disclaimer {
+  font-family: "Unna";
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
