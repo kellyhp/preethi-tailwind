@@ -16,6 +16,11 @@ module.exports = {
       },
       backgroundImage: {
         'hero-pattern': "url('./assets/hero.png')",
+        'catering-pattern': "url('./assets/catering-background.png')",
+      },
+      fontFamily: {
+        'unna': ['Unna', 'sans-serif'],
+        'cabin': ['Cabin', 'sans-serif'],
       }
     },
   },
