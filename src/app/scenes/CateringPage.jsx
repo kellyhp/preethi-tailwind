@@ -2,7 +2,7 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { useState } from 'react';
 import "../globals.css";
-import {Button, Text, Input, Title, Stack, Grid, NumberInput, Select,Textarea } from "@mantine/core";
+import {Button, Text, Input, Title, Stack, Grid, NumberInput, Select,Textarea,Center,Image } from "@mantine/core";
 
 const CateringPage = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
