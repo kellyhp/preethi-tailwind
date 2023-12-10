@@ -9,7 +9,7 @@ const MenuPage = () => {
     <div className="w-full mx-auto md:h-full bg-white">
       <div className="w-full bg-purple md:pt-[140px] pt-[90px] md:pb-[60px] pb-[30px] h-full">
         <div className ="w-5/6 mx-auto md:h-full flex flex-col justify-center items-center">
-          <p className=" w-full font-unna text-[70px] font-bold text-white md:mb-[66px] mb-[33px] text-center">
+          <p className=" w-full font-unna md:text-[70px] text-[32px] font-bold text-white md:mb-[66px] mb-[33px] text-center">
             <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto"/>
               Discover Our Menu
             <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto"/>
