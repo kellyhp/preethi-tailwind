@@ -42,12 +42,12 @@ const Homepage = () => {
                   <div className="flex justify-center items-center space-x-6">
                     <Link href="/menu">
                     <button className="mt-5 text-base text-center font-unna font-bold text-white bg-purple
-                        hover:bg-slate-50 hover:text-purple py-2 px-4 rounded-full transition duration-300
+                        hover:bg-slate-50/75 hover:text-purple py-2 px-4 rounded-full transition duration-300
                         border border-purple">Explore Our Menu</button>
                     </Link>
                     <Link href="/buffet">
                     <button className="mt-5 text-base text-center font-unna font-bold text-white bg-purple
-                        hover:bg-slate-50 hover:text-purple py-2 px-4 rounded-full transition duration-300
+                        hover:bg-slate-50/75 hover:text-purple py-2 px-4 rounded-full transition duration-300
                         border border-purple">Our Buffet Menu</button>
                     </Link>
                     </div>
