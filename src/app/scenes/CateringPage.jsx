@@ -2,7 +2,8 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { useState } from 'react';
 import "../globals.css";
-import {Button, Text, Input, Title, Stack, Grid, NumberInput, Select,Textarea,Center,Image } from "@mantine/core";
+import {Button, Input, Title, Stack, Grid, NumberInput, Select,Textarea,Center} from "@mantine/core";
+import Image from "next/image";
 
 const CateringPage = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -34,7 +35,8 @@ const CateringPage = () => {
                 </Center>
                 <br />
                 <br />
-                <div className="grid-title">
+                <br />
+                <div className="grid-title font-bold">
                   Hosting Any <br />
                   Size Events
                 </div>
@@ -54,7 +56,7 @@ const CateringPage = () => {
                 </Center>
                 <br />
                 <br />
-                <div className="grid-title">
+                <div className="grid-title font-bold">
                   Range of <br />
                   Packages and Pricing
                 </div>
@@ -73,12 +75,12 @@ const CateringPage = () => {
                 </Center>
                 <br />
                 <br />
-                <div className="grid-title">
+                <div className="grid-title font-bold">
                   Any Occasion, <br />
                   Every Celebration
                 </div>
-                <br />
-                <br />
+                <br/>
+                <br/>
                 Birthdays, weddings, corporate events, or just a casual
                 get-together -- we cater to every occasion with a commitment to
                 excellence.
@@ -98,26 +100,26 @@ const CateringPage = () => {
         min-h-[400px] md:min-h-[600px]">
           <div className="mx-auto w-2/3 py-5 px-14" style={{backgroundColor: "white"}}>
             <Stack>
-              <h1 className="text-center font-cabin font-medium text-3xl">Contact Us and Get Our Special Offers</h1>
-              <p className="font-cabin font-normal text-md italic">* Indicates Required Field</p>
+              <h1 className="text-center font-unna font-medium text-3xl">Contact Us and Get Our Special Offers</h1>
+              <p className="font-una font-normal text-md italic">* Indicates Required Field</p>
               <Grid>
                 <Grid.Col span={6}>
-                  <Input.Wrapper className="font-cabin font-normal" label="Name">
+                  <Input.Wrapper className="font-unna font-normal" label="Name">
                     <Input variant="filled"/>
                   </Input.Wrapper>
                 </Grid.Col>
                 <Grid.Col span={6}>
-                  <Input.Wrapper className="font-cabin font-normal" label="Date of Event">
+                  <Input.Wrapper className="font-unna font-normal" label="Date of Event">
                     <Input variant="filled"/>
                   </Input.Wrapper>
                 </Grid.Col>
                 <Grid.Col span={6}>
-                  <Input.Wrapper className="font-cabin font-normal" label="Email">
+                  <Input.Wrapper className="font-unna font-normal" label="Email">
                     <Input variant="filled"/>
                   </Input.Wrapper>
                 </Grid.Col>
                 <Grid.Col span={6}>
-                  <Input.Wrapper className="font-cabin font-normal" label="Phone Number">
+                  <Input.Wrapper className="font-unna font-normal" label="Phone Number">
                     <Input variant="filled"/>
                   </Input.Wrapper>
                 </Grid.Col>
@@ -126,7 +128,7 @@ const CateringPage = () => {
                     variant="filled"
                     label="Select Event Type"
                     data={['Birthday', 'Graduation Party']}
-                    className="font-cabin font-normal"
+                    className="font-unna font-normal"
                   />
                 </Grid.Col>
                 <Grid.Col span={6}>
@@ -134,18 +136,18 @@ const CateringPage = () => {
                     variant="filled"
                     label="# of Guest"
                     min={1}
-                    className="font-cabin font-normal"
+                    className="font-unna font-normal"
                   />
                 </Grid.Col>
                 <Grid.Col span={12}>
                   <Textarea
-                    className="font-cabin font-normal"
+                    className="font-unna font-normal"
                     variant="filled"
                     label="Message"
                   />
                 </Grid.Col>
                 <Grid.Col span={12}>
-                  <button className="w-full bg-purple font-cabin mx-auto text-white rounded-md h-10">Submit</button>
+                  <button className="w-full bg-purple font-unna mx-auto text-white rounded-md h-10">Submit</button>
                 </Grid.Col>
               </Grid>
             </Stack>
