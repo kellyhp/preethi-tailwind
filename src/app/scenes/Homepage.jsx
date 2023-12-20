@@ -15,155 +15,53 @@ const Homepage = () => {
         md:items-center md:h-full py-10 bg-hero-pattern bg-cover w-full
         min-h-[400px] md:min-h-[600px]"
       >
-        <div style={{ width: "80vw", margin: "0 auto" }}>
-          <div
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.7)",
-              paddingTop: 20,
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                marginLeft: 120,
-                marginTop: 20,
-              }}
-            >
-              <div
-                style={{
-                  width: 230,
-                  height: 230,
-                  marginTop: 60,
-                  borderTop: "1px solid #6B0058",
-                  borderBottom: "1px solid #6B0058",
-                }}
-              >
-                <div style={{ marginTop: 50 }}>
-                  <Text
-                    style={{
-                      fontFamily: "Unna",
-                      fontSize: 20,
-                      fontWeight: 700,
-                      textAlign: "center",
-                    }}
-                  >
-                    Buffet Hours
-                  </Text>
-                  <Text
-                    style={{
-                      fontFamily: "Unna",
-                      fontSize: 20,
-                      fontWeight: 700,
-                      textAlign: "center",
-                    }}
-                  >
-                    11:00 am to 3:00 pm
-                  </Text>
-                  <Text
-                    style={{
-                      fontFamily: "Unna",
-                      fontSize: 20,
-                      fontWeight: 700,
-                      textAlign: "center",
-                    }}
-                  >
-                    Dinner Hours
-                  </Text>
-                  <Text
-                    style={{
-                      fontFamily: "Unna",
-                      fontSize: 20,
-                      fontWeight: 700,
-                      textAlign: "center",
-                    }}
-                  >
-                    5:00 pm to 10:00 pm
-                  </Text>
+        <div className="md:flex md:justify-between 
+          md:items-center gap-16 py-10 w-5/6 mx-auto md:h-full">
+        <div className="flex flex-wrap w-full justify-center items-center bg-slate-50/75">
+        <div className="w-full md:w-1/3 p-4 order-2 md:order-1">
+          <div className="md:h-[255px] h-[150px] flex items-center justify-center">
+            <div className="md:w-3/4 w-full h-full text-center border-y-2 border-purple 
+            flex items-center justify-center text-xl font-bold font-unna">
+              Buffet Hours <br/>
+              11:00 am to 3:00 pm <br/>
+              Dinner Hours <br/>
+              5:00 pm to 10:00 pm <br/>
+            </div>
+          </div>
+        </div>
+          <div className="w-full md:w-1/3 p-4 order-1 md:order-2">
+            <div className="h-full flex items-center justify-center mb-4 md:mb-0">
+              <div className="flex flex-col justify-center items-center md:items-start md:justify-start">
+                <div className="flex flex-col justify-center items-center">
+                  <div className="flex md:w-[500px] w-[250px] h-full">
+                    <Image 
+                    alt="preethi-logo"
+                    className="md:w-[500px] md:h-[250px] w-[250px] h-[200px]"
+                    src={require("../assets/preethi-logo.png")}/>
+                  </div>
+                  <div className="flex justify-center items-center space-x-6">
+                    <Link href="/menu">
+                    <button className="mt-5 text-base text-center font-unna font-bold text-white bg-purple
+                        hover:bg-slate-50/75 hover:text-purple py-2 px-4 rounded-full transition duration-300
+                        border border-purple">Explore Our Menu</button>
+                    </Link>
+                    <Link href="/buffet">
+                    <button className="mt-5 text-base text-center font-unna font-bold text-white bg-purple
+                        hover:bg-slate-50/75 hover:text-purple py-2 px-4 rounded-full transition duration-300
+                        border border-purple">Our Buffet Menu</button>
+                    </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div style={{ alignItems: "center" }}>
-                <Center>
-                  <Image
-                    src={require("../assets/preethi-logo.png")}
-                    width={500}
-                    height={400}
-                  ></Image>
-                </Center>
-                <Center
-                  style={{
-                    padding: "10px 20px",
-                    display: "flex",
-                    flexDirection: "row",
-                    gap: 24,
-                  }}
-                >
-                  <Button
-                    style={{
-                      fontFamily: "Unna",
-                      fontsize: 16,
-                      height: 40,
-                      width: 180,
-                      borderRadius: 50,
-                      background: "#6B0058",
-                    }}
-                  >
-                    Explore Our Menu
-                  </Button>
-                  <Button
-                    style={{
-                      fontFamily: "Unna",
-                      fontsize: 16,
-                      height: 40,
-                      width: 180,
-                      borderRadius: 50,
-                      background: "#6B0058",
-                    }}
-                  >
-                    Our Buffet Menu
-                  </Button>
-                </Center>
-              </div>
-              <div
-                style={{
-                  width: 230,
-                  height: 230,
-                  marginTop: 60,
-                  borderTop: "1px solid #6B0058",
-                  borderBottom: "1px solid #6B0058",
-                }}
-              >
-                <div style={{ marginTop: 60 }}>
-                  <Text
-                    style={{
-                      fontFamily: "Unna",
-                      fontSize: 20,
-                      fontWeight: 700,
-                      textAlign: "center",
-                    }}
-                  >
-                    Open Daily
-                  </Text>
-                  <Text
-                    style={{
-                      fontFamily: "Unna",
-                      fontSize: 20,
-                      fontWeight: 700,
-                      textAlign: "center",
-                    }}
-                  >
-                    715 2nd St, Davis,
-                  </Text>
-                  <Text
-                    style={{
-                      fontFamily: "Unna",
-                      fontSize: 20,
-                      fontWeight: 700,
-                      textAlign: "center",
-                    }}
-                  >
-                    CA, 95616
-                  </Text>
+            </div>
+            <div className="w-full md:w-1/3 p-4 order-3">
+              <div className="md:h-[255px] h-[150px] flex items-center justify-center">
+                <div className="md:w-3/4 w-full h-full text-center border-y-2 border-purple 
+                  flex items-center justify-center text-xl font-bold font-unna">
+                  Open Daily <br/>
+                  715 2nd St, Davis, <br/>
+                  CA, 95616 <br/>
                 </div>
               </div>
             </div>

@@ -12,7 +12,8 @@ module.exports = {
         "dark-yellow": "#CC9D2F",
         yellow: "#FFC956",
         white: "#EDE3D4",
-        black: "#1A202C"
+        black: "#1A202C",
+        beige: "#DBC7A9"
       },
       backgroundImage: {
         'hero-pattern': "url('./assets/hero.png')",

@@ -12,7 +12,7 @@ const CateringPage = () => {
       <div className="w-full mx-auto md:h-full bg-white">
         <div className="w-full bg-purple md:pt-[140px] pt-[90px] md:pb-[60px] pb-[30px] h-full">
           <div className="w-5/6 mx-auto md:h-full flex flex-col justify-center items-center">
-            <p className=" w-full font-unna text-[70px] font-bold text-white md:mb-[66px] mb-[33px] text-center">
+            <p className=" w-full font-unna md:text-[70px] text-[32px] font-bold text-white md:mb-[66px] mb-[33px] text-center">
               <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto" />
               Catering Services
               <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto" />
@@ -33,7 +33,6 @@ const CateringPage = () => {
                     height={75}
                   ></Image>
                 </Center>
-                <br />
                 <br />
                 <br />
                 <div className="grid-title font-bold">
@@ -100,8 +99,8 @@ const CateringPage = () => {
         min-h-[400px] md:min-h-[600px]">
           <div className="mx-auto w-2/3 py-5 px-14" style={{backgroundColor: "white"}}>
             <Stack>
-              <h1 className="text-center font-unna font-medium text-3xl">Contact Us and Get Our Special Offers</h1>
-              <p className="font-una font-normal text-md italic">* Indicates Required Field</p>
+              <h1 className="text-center font-unna text-3xl font-bold">Contact Us and Get Our Special Offers</h1>
+              <p className="font-unna font-normal text-md italic">* INDICATES REQUIRED FIELD</p>
               <Grid>
                 <Grid.Col span={6}>
                   <Input.Wrapper className="font-unna font-normal" label="Name">
@@ -147,7 +146,7 @@ const CateringPage = () => {
                   />
                 </Grid.Col>
                 <Grid.Col span={12}>
-                  <button className="w-full bg-purple font-unna mx-auto text-white rounded-md h-10">Submit</button>
+                  <button className="w-full bg-purple font-unna font-bold mx-auto text-white rounded-md h-10">Submit</button>
                 </Grid.Col>
               </Grid>
             </Stack>
