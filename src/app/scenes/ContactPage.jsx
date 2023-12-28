@@ -22,11 +22,11 @@ const ContactPage = () => {
         <div className="w-5/6 mx-auto md:h-full flex justify-center items-center 
         md:mt-[60px] mt-[20px] md:mb-[60px] mb-[20px]">
           <div className="w-full flex flex-col md:flex-row">
-            <div className="w-full md:w-1/3 p-4 bg-beige md:h-[500px] h-[280] 
+            <div className="w-full md:w-1/3 p-4 bg-beige md:h-[500px] h-[3900] 
             justify-center md:items-center items-start md:my-auto my-0">
               <div className="flex flex-wrap md:justify-between w-full items-start h-full md:py-7 py-0">
               {/* First Column/Row */}
-                <div className="md:w-full w-1/3 mb-4 px-2">
+                <div className="w-full md:mb-4 mb-2 px-2">
                   <div
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
@@ -34,7 +34,7 @@ const ContactPage = () => {
                     <div className="font-bold text-purple text-lg">
                       Working Hours
                     </div>
-                    <div className="text-black md:text-base text-sm">
+                    <div className="text-black md:text-base text-sm md:text-start text-center">
                     Open daily <br/>
                     Monday to Sunday <br/>
                     Buffet: 11 am to 3 pm <br/>
@@ -43,7 +43,7 @@ const ContactPage = () => {
                 </div>
               </div>
               {/* Second Column/Row */}
-              <div className="md:w-full w-1/3 mb-4 px-2">
+              <div className="w-full md:mb-4 mb-2  px-2">
                   <div
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
@@ -51,7 +51,7 @@ const ContactPage = () => {
                     <div className="font-bold text-purple text-lg">
                       Location
                     </div>
-                    <div className="text-black md:text-base text-sm">
+                    <div className="text-black md:text-base text-sm md:text-start text-center">
                     715 2nd St <br/>
                     Davis, CA  <br/>
                     95616
@@ -59,7 +59,7 @@ const ContactPage = () => {
                 </div>
               </div>
               {/* Third Column/Row */}
-              <div className="md:w-full w-1/3 mb-4 px-2">
+              <div className="w-full md:mb-4 mb-2 px-2">
                   <div
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
@@ -67,7 +67,7 @@ const ContactPage = () => {
                     <div className="font-bold text-purple text-lg">
                       Contact
                     </div>
-                    <div className="text-black md:text-base text-sm">
+                    <div className="text-black md:text-base text-sm md:text-start text-center">
                     530-759-2040 <br/>
                     PreethiindianD@gmail.com
                     </div>

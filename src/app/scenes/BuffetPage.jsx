@@ -26,7 +26,7 @@ const BuffetPage = () => {
         <div className="w-5/6 mx-auto md:h-full flex md:flex-row flex-col justify-center items-center py-[25px]">
           <Carousel images={images}/>
           <div className="md:w-[300px] w-[250px] bg-dark-yellow rounded-[32px] h-[200px] flex 
-          items-center justify-center mx-auto md:mt-[0px] mt-[90px]">
+          items-center justify-center md:mx-auto mx-0 md:mt-[0px] mt-[90px]">
             <p className="font-unna font-bold text-white text-base text-center flex items-center justify-center">
                 Buffet Hours <br/>
                 Lunch: 11:30 am to 12:30 pm <br/>
@@ -43,7 +43,7 @@ const BuffetPage = () => {
                 <div className="font-bold font-unna border-y-2 border-yellow margin-b-2.5 text-base">
                   MENU
                 </div>
-                <div className="font-unna margin-b-4 text-[40px] font-bold">
+                <div className="font-unna margin-b-4 md:text-[40px] text-[32px] font-bold text-center md:text-start">
                   Try Our Special Offers
                 </div>
                 <div className="font-unna text-xl">
@@ -95,8 +95,9 @@ const BuffetPage = () => {
           items-center justify-center w-full">
               <div className="md:mb-[70px] mb-[35px] w-full justify-center flex flex-col
               items-center md:items-start md:justify-start">
-                <div className="font-unna font-bold text-[40px] md:mb-[44px] mb-[22px]">
-                  Main
+                <div className="font-unna font-bold md:text-[40px] text-[38px] md:mb-[44px] mb-[22px]
+                border-y-2 border-yellow">
+                  SEASONAL
                 </div>
                 <div className="font-unna text-3xl">
                   Dish name
@@ -113,8 +114,9 @@ const BuffetPage = () => {
               </div>
               <div className="w-full justify-center flex items-center flex-col
               md:items-start md:justify-start">
-                <div className="font-unna font-bold text-[40px] md:mb-[44px] mb-[22px]">
-                  Seasonal
+                <div className="font-unna font-bold md:text-[40px] text-[38px] md:mb-[44px] mb-[22px]
+                border-y-2 border-yellow">
+                  MAIN
                 </div>
                 <div className="font-unna text-3xl">
                   Dish name
