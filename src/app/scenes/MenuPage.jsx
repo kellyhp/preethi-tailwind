@@ -28,6 +28,13 @@ const MenuPage = () => {
             </p>
         </div>
       </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-24 my-8 md:h-full bg-white">
+        <Image src={require("../assets/menu1.png")} />
+        <Image src={require("../assets/menu2.png")} />
+        <Image src={require("../assets/menu3.png")} />
+        <Image src={require("../assets/menu4.png")} />
+        <Image src={require("../assets/menu5.png")} />
+      </div>
     </div>
   );
 };
