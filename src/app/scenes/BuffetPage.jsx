@@ -5,10 +5,30 @@ import { Center, Button, Text } from "@mantine/core";
 import Carousel from "../buffet/Carousel";
 import "../globals.css";
 import Link from 'next/link';
+import React, { useEffect } from 'react';
 
 const BuffetPage = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1ç060px)");
   const images = ['carousel-1.png','carousel-2.png','carousel-3.png','carousel-4.png','carousel-5.png' ];
+  useEffect(() => {
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById('defaultOpen').click();
+  }, []);
+
+  const openMenu = (evt, menuCat) => {
+    const tabcontent = document.getElementsByClassName('tabcontent');
+    for (let i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = 'none';
+    }
+
+    const tablinks = document.getElementsByClassName('tablinks');
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(' active', '');
+    }
+
+    document.getElementById(menuCat).style.display = 'block';
+    evt.currentTarget.className += ' active';
+  };
   return (
     <div className="w-full mx-auto md:h-full bg-white">
       <div className="w-full bg-purple md:pt-[140px] pt-[90px] md:pb-[60px] pb-[30px] h-full">
@@ -99,18 +119,62 @@ const BuffetPage = () => {
                 border-y-2 border-yellow">
                   SEASONAL
                 </div>
-                <div className="font-unna text-3xl">
-                  Dish name
+                <div id="menu">
+                <div className="tab font-unna font-xl font-bold overflow-hidden border border-solid border-purple text-slate-50 bg-purple">
+                  <button className="tablinks float-left outline-none cursor-pointer px-2 py-3 transition duration-300 
+                  text-base hover:bg-slate-50 hover:border-slate-50 hover:text-purple" onClick={(e) => openMenu(e, 'Fall')} id="defaultOpen">
+                    Fall
+                  </button>
+                  <button className="tablinks float-left outline-none cursor-pointer px-2 py-3 transition duration-300 
+                  text-base hover:bg-slate-50 hover:border-slate-50 hover:text-purple" onClick={(e) => openMenu(e, 'Winter')}>
+                    Winter
+                  </button>
+                  <button className="tablinks float-left outline-none cursor-pointer px-2 py-3 transition duration-300 
+                  text-base hover:bg-slate-50 hover:border-slate-50 hover:text-purple" onClick={(e) => openMenu(e, 'Spring')}>
+                    Spring
+                  </button>
+                  <button className="tablinks float-left outline-none cursor-pointer px-2 py-3 transition duration-300 
+                  text-base hover:bg-slate-50 hover:border-slate-50 hover:text-purple" onClick={(e) => openMenu(e, 'Summer')}>
+                    Summer
+                  </button>
                 </div>
-                <div className="font-unna text-xl mb-3">
-                  Dish Description
+                <div id="Fall" className="tabcontent hidden p-2 border border-solid border-purple border-t-0 text-xl">
+                  <h3 className="font-bold" >Title 1</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                  <h3 className="font-bold" >Title</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                  <h3 className="font-bold" >Title</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
                 </div>
-                <div className="font-unna text-3xl">
-                  Dish name
+
+                <div id="Winter" className="tabcontent hidden p-2 border border-solid border-purple border-t-0 text-xl">
+                  <h3 className="font-bold" >Title 2</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                  <h3 className="font-bold" >Title</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                  <h3 className="font-bold" >Title</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
                 </div>
-                <div className="font-unna text-xl mb-3">
-                  Dish Description
+
+                <div id="Spring" className="tabcontent hidden p-2 border border-solid border-purple border-t-0 text-xl">
+                  <h3 className="font-bold" >Title 3</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                  <h3 className="font-bold" >Title</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                  <h3 className="font-bold" >Title</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
                 </div>
+
+                <div id="Summer" className="tabcontent hidden p-2 border border-solid border-purple border-t-0 text-xl">
+                  <h3 className="font-bold" >Title 4</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                  <h3 className="font-bold" >Title</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                  <h3 className="font-bold" >Title</h3>
+                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
+                </div>
+
+              </div>
               </div>
               <div className="w-full justify-center flex items-center flex-col
               md:items-start md:justify-start">
@@ -118,16 +182,16 @@ const BuffetPage = () => {
                 border-y-2 border-yellow">
                   MAIN
                 </div>
-                <div className="font-unna text-3xl">
+                <div className="font-unna text-xl font-bold">
                   Dish name
                 </div>
-                <div className="font-unna text-xl mb-3">
+                <div className="font-unna text-xl mb-2">
                   Dish Description
                 </div>
-                <div className="font-unna text-3xl">
+                <div className="font-unna text-xl font-bold">
                   Dish name
                 </div>
-                <div className="font-unna text-xl mb-3">
+                <div className="font-unna text-xl mb-2">
                   Dish Description
                 </div>
               </div>
