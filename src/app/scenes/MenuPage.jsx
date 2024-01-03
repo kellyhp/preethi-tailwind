@@ -19,11 +19,11 @@ const MenuPage = () => {
           buds. Explore our menu, filled with tantalizing appetizers, aromatic curries, and decadent desserts.
           </p>
         </div>
-        <div className="md:w-[500px] w-[300px] bg-dark-yellow rounded-[32px] h-[200px] flex items-center justify-center mx-auto">
-            <p className="font-unna font-bold text-white text-base text-center flex items-center justify-center">
-                Note: We use nuts & diary products in the preparation for food. <br/>
-                Please let us know if you are allergic to any items. Ask for mild, <br/>
-                spicy, or extra spicy when you order your food & enjoy your <br/>
+        <div className="md:w-[500px] w-[270px] bg-dark-yellow rounded-[32px] h-[200px] flex items-center justify-center mx-auto">
+            <p className="font-unna font-bold text-white md:text-base text-sm text-center flex items-center justify-center">
+                Note: We use nuts & diary products in the preparation for food. 
+                Please let us know if you are allergic to any items. Ask for mild, 
+                spicy, or extra spicy when you order your food & enjoy your 
                 delicious meal!
             </p>
         </div>

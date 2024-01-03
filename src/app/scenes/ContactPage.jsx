@@ -22,11 +22,11 @@ const ContactPage = () => {
         <div className="w-5/6 mx-auto md:h-full flex justify-center items-center 
         md:mt-[60px] mt-[20px] md:mb-[60px] mb-[20px]">
           <div className="w-full flex flex-col md:flex-row">
-            <div className="w-full md:w-1/3 p-4 bg-beige md:h-[500px] h-[280] 
+            <div className="w-full md:w-1/3 p-4 bg-beige md:h-[500px] h-[390px] 
             justify-center md:items-center items-start md:my-auto my-0">
               <div className="flex flex-wrap md:justify-between w-full items-start h-full md:py-7 py-0">
               {/* First Column/Row */}
-                <div className="md:w-full w-1/3 mb-4 px-2">
+                <div className="w-full md:mb-4 mb-2 px-2">
                   <div
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
@@ -34,7 +34,7 @@ const ContactPage = () => {
                     <div className="font-bold text-purple text-lg">
                       Working Hours
                     </div>
-                    <div className="text-black md:text-base text-sm">
+                    <div className="text-black md:text-base text-sm md:text-start text-center">
                     Open daily <br/>
                     Monday to Sunday <br/>
                     Buffet: 11 am to 3 pm <br/>
@@ -43,7 +43,7 @@ const ContactPage = () => {
                 </div>
               </div>
               {/* Second Column/Row */}
-              <div className="md:w-full w-1/3 mb-4 px-2">
+              <div className="w-full md:mb-4 mb-2  px-2">
                   <div
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
@@ -51,7 +51,7 @@ const ContactPage = () => {
                     <div className="font-bold text-purple text-lg">
                       Location
                     </div>
-                    <div className="text-black md:text-base text-sm">
+                    <div className="text-black md:text-base text-sm md:text-start text-center">
                     715 2nd St <br/>
                     Davis, CA  <br/>
                     95616
@@ -59,7 +59,7 @@ const ContactPage = () => {
                 </div>
               </div>
               {/* Third Column/Row */}
-              <div className="md:w-full w-1/3 mb-4 px-2">
+              <div className="w-full md:mb-4 mb-2 px-2">
                   <div
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
@@ -67,7 +67,7 @@ const ContactPage = () => {
                     <div className="font-bold text-purple text-lg">
                       Contact
                     </div>
-                    <div className="text-black md:text-base text-sm">
+                    <div className="text-black md:text-base text-sm md:text-start text-center">
                     530-759-2040 <br/>
                     PreethiindianD@gmail.com
                     </div>
@@ -80,6 +80,171 @@ const ContactPage = () => {
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
+        </div>
+      </div>
+      {/* Submission Section */}
+      <div
+        className="md:flex 
+        md:items-center md:h-full place-content-center mt-10 gap-x-40 font-unna"
+      >
+        {/* Image */}
+        <div className="self-center">
+          <Image
+            src={require("../assets/contact_meal.png")}
+            alt="sample recipe"
+          />
+        </div>
+        {/* Form */}
+        <div className="self-center">
+          <h1 className="flex text-3xl font-semibold text-center">
+            <div>
+              <p class="text-red-600">* </p>
+            </div>
+            <div>Indicates Required Field</div>
+          </h1>
+          <form className="mt-6">
+            <div className="mb-2">
+              <label>
+                <div className="flex">
+                  <div>
+                    <span class="text-black-600">Name</span>
+                  </div>
+                  <div>
+                    <p class="text-red-600">*</p>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  name="name"
+                  className="
+                w-full
+                block px-1 py-2 mt-2
+                border-gray-300
+                rounded-md
+                shadow-sm
+                focus:border-indigo-300
+                focus:ring
+                focus:ring-indigo-200
+                focus:ring-opacity-50
+                "
+                  required
+                />
+              </label>
+            </div>
+            <div className="mb-2">
+              <label>
+                <div className="flex">
+                  <div>
+                    <span class="text-black-600">Email</span>
+                  </div>
+                  <div>
+                    <p class="text-red-600">*</p>
+                  </div>
+                </div>
+                <input
+                  name="email"
+                  type="email"
+                  className="
+                block
+                w-full
+                mt-2 px-1 py-2
+                border-gray-300
+                rounded-md
+                shadow-sm
+                focus:border-indigo-300
+                focus:ring
+                focus:ring-indigo-200
+                focus:ring-opacity-50
+                "
+                  required
+                />
+              </label>
+            </div>
+            <div className="mb-2">
+              <label>
+                <div className="flex">
+                  <div>
+                    <span class="text-black-600">
+                      What is your reason of contact?
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-red-600">*</p>
+                  </div>
+                </div>
+                <input
+                  name="subject"
+                  type="subject"
+                  className="
+                block
+                w-full
+                mt-2 px-1 py-2
+                border-gray-300
+                rounded-md
+                shadow-sm
+                focus:border-indigo-300
+                focus:ring
+                focus:ring-indigo-200
+                focus:ring-opacity-50
+                "
+                  required
+                />
+              </label>
+            </div>
+            <div className="mb-4">
+              <label>
+                <div className="flex">
+                  <div>
+                    <span class="text-black-600">Message</span>
+                  </div>
+                  <div>
+                    <p class="text-red-600">*</p>
+                  </div>
+                </div>
+                <textarea
+                  name="message"
+                  className="
+                block
+                w-full
+                mt-2 px-1 py-1
+                border-gray-300
+                rounded-md
+                shadow-sm
+                focus:border-indigo-300
+                focus:ring
+                focus:ring-indigo-200
+                focus:ring-opacity-50
+                "
+                  required
+                  rows="5"
+                ></textarea>
+              </label>
+            </div>
+            {/* h-10
+                px-5 */}
+            <div class="mb-6">
+              <button
+                type="submit"
+                className="
+                px-8
+                pb-2
+                pt-2
+                block
+                w-full
+                text-indigo-100
+                bg-purple
+                rounded-lg
+                transition-colors
+                duration-150
+                focus:shadow-outline
+                hover:bg-purple
+                "
+              >
+                Submit
+              </button>
+            </div>
+            <div></div>
+          </form>
         </div>
       </div>
     </div>

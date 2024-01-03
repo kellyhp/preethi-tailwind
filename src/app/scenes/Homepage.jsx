@@ -29,24 +29,24 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-          <div className="w-full md:w-1/3 p-4 order-1 md:order-2">
+          <div className="w-full md:w-1/3 md:p-4 p-1 order-1 md:order-2">
             <div className="h-full flex items-center justify-center mb-4 md:mb-0">
               <div className="flex flex-col justify-center items-center md:items-start md:justify-start">
                 <div className="flex flex-col justify-center items-center">
                   <div className="flex md:w-[500px] w-[250px] h-full">
                     <Image 
                     alt="preethi-logo"
-                    className="md:w-[500px] md:h-[250px] w-[250px] h-[200px]"
+                    className="md:w-[500px] md:h-[250px] w-[250px] h-[150px]"
                     src={require("../assets/preethi-logo.png")}/>
                   </div>
-                  <div className="flex justify-center items-center space-x-6">
+                  <div className="flex justify-center items-center md:space-x-6 space-x-2">
                     <Link href="/menu">
-                    <button className="mt-5 text-base text-center font-unna font-bold text-white bg-purple
+                    <button className="mt-5 md:text-base text-sm text-center font-unna font-bold text-white bg-purple
                         hover:bg-slate-50/75 hover:text-purple py-2 px-4 rounded-full transition duration-300
                         border border-purple">Explore Our Menu</button>
                     </Link>
                     <Link href="/buffet">
-                    <button className="mt-5 text-base text-center font-unna font-bold text-white bg-purple
+                    <button className="mt-5 md:text-base text-sm text-center font-unna font-bold text-white bg-purple
                         hover:bg-slate-50/75 hover:text-purple py-2 px-4 rounded-full transition duration-300
                         border border-purple">Our Buffet Menu</button>
                     </Link>
@@ -102,12 +102,12 @@ const Homepage = () => {
               <div>
                 <Image
                   alt="organic"
-                  className="flex justify-center items-center max-w-[200px] 
-                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+                  className="flex justify-center items-center max-w-[150px] 
+                        md:max-w-[300px] max-h-[170px] md:max-h-[400px]"
                   src={require("../assets/organic.png")}
                 />
               </div>
-              <div className="px-8 md:px-16">
+              <div className="px-4 md:px-16">
                 <p className="mt-5 mb-5 font-bold text-2xl"> Organic </p>
                 <p className="text-lg">
                   We take pride in every dish, drink, dosa, and dessert we make
@@ -120,18 +120,18 @@ const Homepage = () => {
           {/* Second Column/Row */}
           <div className="w-full md:w-1/3 mb-4 px-4">
             <div
-              className="flex justify-center items-center 
-                font-unna text-black text-center flex-row md:flex-col"
+              className="flex justify-center items-center text-center 
+              font-unna text-black flex-row md:flex-col"
             >
               <div>
                 <Image
-                  alt="homemage"
-                  className="justify-center flex items-center max-w-[200px] 
-                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+                  alt="homemade"
+                  className="flex justify-center items-center max-w-[150px] 
+                  md:max-w-[300px] max-h-[170px] md:max-h-[400px]"
                   src={require("../assets/homemade.png")}
                 />
               </div>
-              <div className="px-8 md:px-16">
+              <div className="px-4 md:px-16">
                 <p className="mt-5 mb-5 font-bold text-2xl"> Homemade </p>
                 <p className="text-lg">
                   Our two primary chefs are made up of a husband and wife team
@@ -144,18 +144,18 @@ const Homepage = () => {
           {/* Third Column/Row */}
           <div className="w-full md:w-1/3 mb-4 px-4">
             <div
-              className="flex justify-center items-center 
-                font-unna text-black text-center flex-row md:flex-col"
+              className="flex justify-center items-center text-center 
+              font-unna text-black flex-row md:flex-col"
             >
               <div>
                 <Image
                   alt="order"
-                  className="justify-center flex items-center max-w-[200px] 
-                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+                  className="flex justify-center items-center max-w-[150px] 
+                  md:max-w-[300px] max-h-[170px] md:max-h-[400px]"
                   src={require("../assets/order.png")}
                 />
               </div>
-              <div className="px-8 md:px-16">
+              <div className="px-4 md:px-16">
                 <p className="mt-5 mb-5 font-bold text-2xl"> Made-To-Order </p>
                 <p className="text-lg">
                   Each individual dish are made-to-order and prepared correctly
@@ -190,41 +190,41 @@ const Homepage = () => {
             of authentic spices and flavors of each area.
           </Text>
         </div>
-        <div className="flex flex-wrap justify-between">
-        <div className="mt-5 md:mt-10 w-1/2">
+        <div className="md:w-2/3 w-full flex flex-wrap justify-between">
+        <div className="mt-5 md:mt-10 w-1/2 flex md:justify-start justify-center">
           {isAboveMediumScreens ? (
             <div>
                <Image
             alt= "about-1"
-            className="max-w-[200px]
-                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+            className="max-w-[150px]
+                        md:max-w-[300px] max-h-[250px] md:max-h-[400px] md:justify-start justify-center"
             src={require("../assets/about-1.png")}
           />
             </div>
           ) : (
             <Image
             alt= "about-1"
-            className="max-w-[200px] 
-                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+            className="max-w-[150px]
+            md:max-w-[300px] max-h-[250px] md:max-h-[400px] md:justify-start justify-center"
             src={require("../assets/about-1.png")}
           />
           )}
         </div>
-        <div className="mt-5 w-1/2 md:mt-[200px]">
+        <div className="mt-5 w-1/2 md:mt-[200px] flex md:justify-start justify-center">
           {isAboveMediumScreens ? (
             <div>
                 <Image
             alt= "about-2"
-            className="max-w-[200px]
-                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+            className="max-w-[150px]
+            md:max-w-[300px] max-h-[250px] md:max-h-[400px] md:justify-start justify-center"
             src={require("../assets/about-2.png")}
           />
             </div>
           ) : (
             <Image
             alt= "about-2"
-            className="max-w-[200px] 
-                        md:max-w-[300px] max-h-[300px] md:max-h-[400px]"
+            className="max-w-[150px]
+            md:max-w-[300px] max-h-[250px] md:max-h-[400px] md:justify-start justify-center"
             src={require("../assets/about-2.png")}
           />
           )}
@@ -271,14 +271,14 @@ const Homepage = () => {
           <p className="mt-5 text-base font-unna text-center md:text-start text-purple font-bold">
             FOR THE SWEETEST MOMENTS IN LIFE
           </p>
+          <div className="w-full md:max-w-[500px]">
           <p className="mt-5 mb-7 text-lg text-center md:text-start font-unna">
             We take pride in hosting events of any size with a passion for
-            creating <br />
-            unforgettable moments. Whether you're planning an intimate <br />
-            gathering, a corporate affair, or a grand celebration, we've got
-            your <br />
+            creating unforgettable moments. Whether you're planning an intimate 
+            gathering, a corporate affair, or a grand celebration, we've got your
             catering needs covered!
           </p>
+          </div>
           <div className="w-full justify-center flex items-center md:items-start md:justify-start">
             <Link href="/catering">
             <button
