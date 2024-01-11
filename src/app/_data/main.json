@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "White Rice",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "name": "Mix Pakora",
+      "description": "Onion, spinach, cabbage, battered and fried in lentil flavor"
+    },
+    {
+        "id": 3,
+        "name": "Vegetable Biryani",
+        "description": "Aromatic basmati rice, mixed vegetables, and a blend of spices"
+    },
+    {
+        "id": 4,
+        "name": "Aloo Gobi",
+        "description": "Tender potatoes and sweet green peas cooked in a spiced tomato-based curry"
+    },
+    {
+        "id": 5,
+        "name": "Egg Curry",
+        "description": "Boiled eggs, lightly fried and cooked in curry sauce prepared with tamarind, onion and tomato base"
+    },
+    {
+        "id": 6,
+        "name": "Palak Paneer",
+        "description": "Creamy spinach puree cooked with aromatic spices, onions, and tomatoes, accompanied by cubes of soft paneer"
+    },
+    {
+        "id": 7,
+        "name": "Dal Curry",
+        "description": "Lentils cooked with tomatoes and spinach with spices"
+    },
+    {
+        "id": 8,
+        "name": "Sambar",
+        "description": "Lentil stew brimming with vegetables, aromatic spices, and a tangy tamarind twist"
+    },
+    {
+        "id": 10,
+        "name": "Goat Curry",
+        "description": "Tender goat meat cooked in a savory curry sauces"
+    },
+    {
+        "id": 11,
+        "name": "Tandoori Chicken",
+        "description": "Chicken marinated in exotically spiced yogurt and roasted in clay oven"
+      },
+      {
+        "id": 12,
+        "name": "Butter Chicken",
+        "description": "Juicy chicken cooked in luscious tomato and yogurt sauce, seasoned with a blend of traditional Indian spices"
+      },
+      {
+          "id": 13,
+          "name": "Naan",
+          "description": "Freshly baked bread with a soft texture and a hint of butter"
+      },
+      {
+          "id": 14,
+          "name": "Rice Kheer",
+          "description": "Rich and creamy rice simmered in sweetened milk, garnished with nuts and spices"
+      },
+      {
+          "id": 15,
+          "name": "Gulab Jamun",
+          "description": "Soft and syrup-soaked milk dumplings"
+      }
+  ]

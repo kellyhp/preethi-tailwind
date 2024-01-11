@@ -1,0 +1,148 @@
+[
+    {
+      "id": 1,
+      "name": "Cut Mirchi",
+      "description": "Spicy green chilies deep-fried to perfection, creating a crispy and tongue-tingling snack"
+    },
+    {
+      "id": 2,
+      "name": "South Indian Chicken Curry",
+      "description": "Tender chicken cooked in a flavorful blend of South Indian spices, coconut milk, and tamarind for an aromatic and tangy curry"
+    },
+    {
+        "id": 3,
+        "name": "Okra Fry ",
+        "description": "Fresh and tender okra (lady's finger) stir-fried with crunchy cashews, aromatic spices, and a hint of tanginess"
+    },
+    {
+        "id": 4,
+        "name": "Lemon Rice",
+        "description": "Cooked rice tossed in a tempering of mustard seeds, curry leaves, peanuts, and lemon juice"
+    },
+    {
+        "id": 5,
+        "name": "Mutter Paneer",
+        "description": "Tender green peas and cubes of paneer cooked in a flavorful tomato-based curry infused with aromatic spices"
+    },
+    {
+        "id": 6,
+        "name": "Crab Fry",
+        "description": "Succulent crab pieces  tossed in aromatic spices and herbs"
+    },
+    {
+        "id": 7,
+        "name": "Mushroom Curry",
+        "description": "Savory mushrooms simmered in a creamy coconut milk sauce infused with aromatic spice"
+    },
+    {
+        "id": 8,
+        "name": "Okra Masala",
+        "description": "Fresh and tender okra (lady's finger) cooked in a flavorful tomato-based gravy, seasoned with a blend of aromatic spices"
+    },
+    {
+        "id": 9,
+        "name": "Veggie Roll",
+        "description": "Crunchy vegetables, wrapped in a soft tortilla or flatbread, is complemented with delectable sauces and seasonings"
+    },
+    {
+        "id": 10,
+        "name": "Bagara Baingan",
+        "description": "Tender baby eggplants (baingan) cooked in a rich and aromatic peanut and sesame seed-based gravy, infused with a blend of traditional Indian spices"
+    },
+    {
+        "id": 11,
+        "name": "Chana Masala",
+        "description": "Garbanzo beans cooked with special herbs and spices"
+      },
+      {
+        "id": 12,
+        "name": "Mushroom Sage",
+        "description": "Sautéed mushrooms simmered in a creamy-spinach-based sauce, seasoned with aromatic spices"
+      },
+      {
+          "id": 13,
+          "name": "Chicken Pakara ",
+          "description": "Chicken pieces coated in a delicate batter, deep-fried to golden perfection"
+      },
+      {
+          "id": 15,
+          "name": "Chicken Koorma",
+          "description": "Tender chicken cooked in a rich and creamy sauce with aromatic spices"
+      },
+      {
+          "id": 16,
+          "name": "Drumstick Curry",
+          "description": "Tender drumstick pieces cooked in a flavorful blend of spices, coconut milk, and tangy tamarind"
+      },
+      {
+          "id": 17,
+          "name": "Tindora Fry",
+          "description": "Thinly slice ivy gourd stir-fried"
+      },
+      {
+          "id": 19,
+          "name": "Channa Saag",
+          "description": "Combination of chickpeas (chana) and spinach (saag) cooked in a flavorful blend of Indian spices"
+      },
+      {
+          "id": 20,
+          "name": "Bell Pepper Fry",
+          "description": "Colorful bell peppers are stir-fried with aromatic Indian spices, onions, and garlic"
+      },
+      {
+        "id": 21,
+        "name": "Tomato Rice",
+        "description": "Fragrant basmati rice cooked to perfection with tangy tomatoes, aromatic spices, and a hint of warmth"
+      },
+      {
+        "id": 22,
+        "name": "Goat Biryani",
+        "description": "Fragrant basmati rice layered with succulent pieces of goat meat, aromatic spices, and caramelized onions"
+      },
+      {
+          "id": 23,
+          "name": "Baingan Barta",
+          "description": "Roasted and mashed eggplant (baingan) cooked with a blend of spices, onions, tomatoes, and aromatic herbs"
+      },
+      {
+          "id": 24,
+          "name": "Baingan Rice",
+          "description": "Fluffy basmati rice is infused with smoky essence of roasted eggplant, aromatic spices, and herbs"
+      },
+      {
+          "id": 25,
+          "name": "Paneer Rice",
+          "description": "Fragrant basmati rice cooked with succulent cubes of paneer (Indian cottage cheese), aromatic spices, and a medley of vegetables"
+      },
+      {
+          "id": 26,
+          "name": "Tamarind Rice",
+          "description": "Cooked rice mixed with tangy and spicy tamarind-based paste, tempered with mustard seeds, curry leaves, and other spices"
+      },
+      {
+          "id": 27,
+          "name": "Shrimp Curry",
+          "description": "Shrimp cooked in an Indian spice blend with a sauce simmer"
+      },
+      {
+          "id": 28,
+          "name": "Kufta Curry",
+          "description": "Seasoned and tender meatballs simmered in a rich and fragrant sauce"
+      },
+      {
+          "id": 29,
+          "name": "Ginger Chicken",
+          "description": "Tender potatoes and vibrant bell peppers in a delicious spiced sauce, a vegetarian dish bursting with aromatic flavors"
+      },
+      {
+          "id": 30,
+          "name": "Aloo Bell Pepper Curry",
+          "description": "Tender potatoes and vibrant bell peppers in a delicious spiced sauce, a vegetarian dish bursting with aromatic flavors"
+      },
+      {
+        "id": 31,
+        "name": "Coconut Rice",
+        "description": "Basmati rice cooked with freshly grated coconut, spices and coconut milk"
+    }
+
+  ]

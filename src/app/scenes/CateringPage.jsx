@@ -24,8 +24,8 @@ const CateringPage = () => {
             </p>
           <div id="catering">
             <div className="header">What We Offer</div>
-            <div className="grid-container">
-              <div className="grid-item">
+            <div className="flex md:flex-row flex-col w-full mx-auto justify-center items-center mt-6 md:mt-20">
+              <div className="grid-item md:px-8 px-3 md:py-0 py-5">
                 <Center>
                   <Image
                     src={require("../assets/Waiter.png")}
@@ -45,7 +45,7 @@ const CateringPage = () => {
                 dedicated to ensuring every detail is perfect, no matter how big
                 or small your occasion.
               </div>
-              <div className="grid-item">
+              <div className="grid-item md:px-8 px-3 md:py-0 py-5">
                 <Center>
                   <Image
                     src={require("../assets/Slider Control.png")}
@@ -64,7 +64,7 @@ const CateringPage = () => {
                 Explore our diverse range of packages, whatever your
                 preferences, we have a package that suits your taste and budget.
               </div>
-              <div className="grid-item">
+              <div className="grid-item md:px-8 px-3 md:py-0 py-5">
                 <Center>
                   <Image
                     src={require("../assets/Confetti.png")}
@@ -85,7 +85,7 @@ const CateringPage = () => {
                 excellence.
               </div>
             </div>
-            <div id="disclaimer">
+            <div id="disclaimer" className="mt-6 md:mt-20">
               Call us to discuss pricing and menu options <br />
               Phone Number: 530-759-2040
             </div>

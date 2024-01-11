@@ -17,6 +17,7 @@ const ContactPage = () => {
           </p>
           <p className="w-full font-unna text-white font-bold text-xl text-center">
             If you have any questions or concerns, feel free to send us a form down below!
+            Looking to make an order? Feel free to call us!
           </p>
         </div>
         <div className="w-5/6 mx-auto md:h-full flex justify-center items-center 
@@ -85,24 +86,26 @@ const ContactPage = () => {
       {/* Submission Section */}
       <div
         className="md:flex 
-        md:items-center md:h-full place-content-center mt-10 gap-x-40 font-unna"
+        md:items-center md:h-full place-content-center mt-10 gap-x-40 font-unna py-4"
       >
         {/* Image */}
-        <div className="self-center">
+        <div className="md:self-center flex justify-center">
           <Image
+            className="md:h-[520px] md:w-[300px] w-[200px] h-[360px]"
             src={require("../assets/contact_meal.png")}
             alt="sample recipe"
           />
         </div>
         {/* Form */}
-        <div className="self-center">
-          <h1 className="flex text-3xl font-semibold text-center">
+        <div className="md:self-center flex flex-col justify-center">
+          <h1 className="flex text-3xl font-semibold text-center justify-center md:justify-start
+          mt-2 md:mt-0">
             <div>
               <p class="text-red-600">* </p>
             </div>
-            <div>Indicates Required Field</div>
+            Indicates Required Field
           </h1>
-          <form className="mt-6">
+          <form className="md:mt-6 mt-2 shadow-none rounded-none">
             <div className="mb-2">
               <label>
                 <div className="flex">

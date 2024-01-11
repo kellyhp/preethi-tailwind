@@ -169,7 +169,7 @@ const Homepage = () => {
       {/* ABOUT US */}
       <div className="md:flex md:justify-between 
         md:items-center gap-16 py-10 w-5/6 mx-auto md:h-full">
-        <div className="md:w-1/3 justify-center items-center md:items-start md:justify-start w-full">
+        <div className="md:w-1/2 justify-center items-center md:items-start md:justify-start w-full">
           <div className="flex justify-center items-center md:items-start md:justify-start">
             <Image 
               alt="about-icon"
@@ -190,7 +190,7 @@ const Homepage = () => {
             of authentic spices and flavors of each area.
           </Text>
         </div>
-        <div className="md:w-2/3 w-full flex flex-wrap justify-between">
+        <div className="md:w-1/2 w-full flex flex-wrap justify-between">
         <div className="mt-5 md:mt-10 w-1/2 flex md:justify-start justify-center">
           {isAboveMediumScreens ? (
             <div>

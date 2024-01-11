@@ -7,7 +7,7 @@ export default function Buffet() {
   return (
     <main className="bg-white min-h-full">
       <Navbar />
-      <BuffetPage/>
+      <BuffetPage />
       <Footer />
     </main>
   );

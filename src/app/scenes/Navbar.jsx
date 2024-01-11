@@ -19,9 +19,6 @@ const Navbar = ()  => {
                     <Link href="/buffet" className="hover:text-dark-yellow transition duration-500"> Buffet </Link>
                     <Link href="/menu" className="hover:text-dark-yellow transition duration-500"> Menu </Link>
                     <Link href="/contact" className="hover:text-dark-yellow transition duration-500"> Contact </Link>
-                     <button className = "rounded-full bg-dark-yellow p-3 hover:text-dark-yellow hover:bg-white transition duration-500" > 
-                     <Link href="/order"> Order Online </Link>
-                     </button>
                 </div>
             ) : ( <button className="rounded-full bg-purple p-2" 
                 onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -48,7 +45,6 @@ const Navbar = ()  => {
                   <Link href="/buffet" className="hover:text-dark-yellow transition duration-500">Buffet</Link>
                   <Link href="/menu" className="hover:text-dark-yellow transition duration-500">Menu</Link>
                   <Link href="/contact" className="hover:text-dark-yellow transition duration-500">Contact</Link>
-                  <Link href="/order" className="hover:text-dark-yellow transition duration-500">Order</Link>
                   </div>
                 </div>
             )}

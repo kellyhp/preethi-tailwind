@@ -5,30 +5,15 @@ import { Center, Button, Text } from "@mantine/core";
 import Carousel from "../buffet/Carousel";
 import "../globals.css";
 import Link from 'next/link';
-import React, { useEffect } from 'react';
+import React from 'react';
+import useMain from "../hooks/useMain";
+import useSeasonal from "../hooks/useSeasonal";
 
 const BuffetPage = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1ç060px)");
   const images = ['carousel-1.png','carousel-2.png','carousel-3.png','carousel-4.png','carousel-5.png' ];
-  useEffect(() => {
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById('defaultOpen').click();
-  }, []);
-
-  const openMenu = (evt, menuCat) => {
-    const tabcontent = document.getElementsByClassName('tabcontent');
-    for (let i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = 'none';
-    }
-
-    const tablinks = document.getElementsByClassName('tablinks');
-    for (let i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(' active', '');
-    }
-
-    document.getElementById(menuCat).style.display = 'block';
-    evt.currentTarget.className += ' active';
-  };
+  const seasonalMenu = useSeasonal();
+  const mainMenu = useMain();
   return (
     <div className="w-full mx-auto md:h-full bg-white">
       <div className="w-full bg-purple md:pt-[140px] pt-[90px] md:pb-[60px] pb-[30px] h-full">
@@ -113,87 +98,29 @@ const BuffetPage = () => {
         <div className="w-full md:w-1/2 p-4">
           <div className="h-full flex flex-col md:items-start md:justify-start 
           items-center justify-center w-full">
-              <div className="md:mb-[70px] mb-[35px] w-full justify-center flex flex-col
-              items-center md:items-start md:justify-start">
-                <div className="font-unna font-bold md:text-[40px] text-[38px] md:mb-[44px] mb-[22px]
-                border-y-2 border-yellow">
-                  SEASONAL
-                </div>
-                <div id="menu">
-                <div className="tab font-unna font-xl font-bold overflow-hidden border border-solid border-purple text-slate-50 bg-purple">
-                  <button className="tablinks float-left outline-none cursor-pointer px-2 py-3 transition duration-300 
-                  text-base hover:bg-slate-50 hover:border-slate-50 hover:text-purple" onClick={(e) => openMenu(e, 'Fall')} id="defaultOpen">
-                    Fall
-                  </button>
-                  <button className="tablinks float-left outline-none cursor-pointer px-2 py-3 transition duration-300 
-                  text-base hover:bg-slate-50 hover:border-slate-50 hover:text-purple" onClick={(e) => openMenu(e, 'Winter')}>
-                    Winter
-                  </button>
-                  <button className="tablinks float-left outline-none cursor-pointer px-2 py-3 transition duration-300 
-                  text-base hover:bg-slate-50 hover:border-slate-50 hover:text-purple" onClick={(e) => openMenu(e, 'Spring')}>
-                    Spring
-                  </button>
-                  <button className="tablinks float-left outline-none cursor-pointer px-2 py-3 transition duration-300 
-                  text-base hover:bg-slate-50 hover:border-slate-50 hover:text-purple" onClick={(e) => openMenu(e, 'Summer')}>
-                    Summer
-                  </button>
-                </div>
-                <div id="Fall" className="tabcontent hidden p-2 border border-solid border-purple border-t-0 text-xl">
-                  <h3 className="font-bold" >Title 1</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                  <h3 className="font-bold" >Title</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                  <h3 className="font-bold" >Title</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                </div>
-
-                <div id="Winter" className="tabcontent hidden p-2 border border-solid border-purple border-t-0 text-xl">
-                  <h3 className="font-bold" >Title 2</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                  <h3 className="font-bold" >Title</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                  <h3 className="font-bold" >Title</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                </div>
-
-                <div id="Spring" className="tabcontent hidden p-2 border border-solid border-purple border-t-0 text-xl">
-                  <h3 className="font-bold" >Title 3</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                  <h3 className="font-bold" >Title</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                  <h3 className="font-bold" >Title</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                </div>
-
-                <div id="Summer" className="tabcontent hidden p-2 border border-solid border-purple border-t-0 text-xl">
-                  <h3 className="font-bold" >Title 4</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                  <h3 className="font-bold" >Title</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                  <h3 className="font-bold" >Title</h3>
-                  <p className="mb-2">Food, Food, Food, Food, Food, Food, Food, Food</p>
-                </div>
-
-              </div>
-              </div>
-              <div className="w-full justify-center flex items-center flex-col
-              md:items-start md:justify-start">
+              <div className="md:mb-[70px] mb-[35px] w-full  flex flex-col items-start justify-start">
                 <div className="font-unna font-bold md:text-[40px] text-[38px] md:mb-[44px] mb-[22px]
                 border-y-2 border-yellow">
                   MAIN
                 </div>
-                <div className="font-unna text-xl font-bold">
-                  Dish name
+                {mainMenu.map((dish) => (
+                  <div className="flex flex-col justify-start" key={dish.id}>
+                    <div className="font-unna text-xl font-bold">{dish.name}</div>
+                    <div className="font-unna text-xl mb-2">{dish.description}</div>
+                  </div>
+                ))}
+              </div>
+              <div className="w-full flex flex-col items-start justify-start">
+                <div className="font-unna font-bold md:text-[40px] text-[38px] md:mb-[44px] mb-[22px]
+                border-y-2 border-yellow text-center">
+                  SEASONAL
                 </div>
-                <div className="font-unna text-xl mb-2">
-                  Dish Description
-                </div>
-                <div className="font-unna text-xl font-bold">
-                  Dish name
-                </div>
-                <div className="font-unna text-xl mb-2">
-                  Dish Description
-                </div>
+                {seasonalMenu.map((dish) => (
+                  <div className="flex flex-col justify-start" key={dish.id}>
+                    <div className="font-unna text-xl font-bold">{dish.name}</div>
+                    <div className="font-unna text-xl mb-2">{dish.description}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -202,4 +129,5 @@ const BuffetPage = () => {
     </div>
   );
 };
+
 export default BuffetPage;
