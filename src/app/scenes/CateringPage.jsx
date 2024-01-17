@@ -17,15 +17,15 @@ const CateringPage = () => {
               Catering Services
               <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto" />
             </p>
-            <p className="w-full font-unna text-white font-bold text-xl text-center">
+            <p className="md:w-1/2 sm:w-full font-unna text-white font-bold text-xl text-center">
               Ready to Elevate Your Event? Contact us today to discuss your event,
-            customize your <br />
+            customize your
               package, and ensure your occasion is nothing short of extraordinary.
             </p>
           <div id="catering">
             <div className="header">What We Offer</div>
             <div className="flex md:flex-row flex-col w-full mx-auto justify-center items-center mt-6 md:mt-20">
-              <div className="grid-item md:px-8 px-3 md:py-0 py-5">
+              <div className="grid-item md:px-3 px-3 md:py-0 py-5">
                 <Center>
                   <Image
                     src={require("../assets/Waiter.png")}
@@ -33,14 +33,10 @@ const CateringPage = () => {
                     height={75}
                   ></Image>
                 </Center>
-                <br />
-                <br />
-                <div className="grid-title font-bold">
+                <div className="grid-title font-bold my-4 md:my-10">
                   Hosting Any <br />
                   Size Events
                 </div>
-                <br />
-                <br />
                 From intimate dinners to large scale galas, our team is
                 dedicated to ensuring every detail is perfect, no matter how big
                 or small your occasion.
@@ -53,14 +49,10 @@ const CateringPage = () => {
                     height={75}
                   ></Image>
                 </Center>
-                <br />
-                <br />
-                <div className="grid-title font-bold">
+                <div className="grid-title font-bold my-4 md:my-10">
                   Range of <br />
                   Packages and Pricing
                 </div>
-                <br />
-                <br />
                 Explore our diverse range of packages, whatever your
                 preferences, we have a package that suits your taste and budget.
               </div>
@@ -72,14 +64,10 @@ const CateringPage = () => {
                     height={75}
                   ></Image>
                 </Center>
-                <br />
-                <br />
-                <div className="grid-title font-bold">
+                <div className="grid-title font-bold my-4 md:my-10">
                   Any Occasion, <br />
                   Every Celebration
                 </div>
-                <br/>
-                <br/>
                 Birthdays, weddings, corporate events, or just a casual
                 get-together -- we cater to every occasion with a commitment to
                 excellence.
@@ -97,58 +85,58 @@ const CateringPage = () => {
         className="md:flex md:justify-between 
         md:items-center md:h-full py-10 bg-catering-pattern bg-cover w-full
         min-h-[400px] md:min-h-[600px]">
-          <div className="mx-auto w-2/3 py-5 px-14" style={{backgroundColor: "white"}}>
+          <div className="mx-auto w-5/6 md:w-2/3 py-5 px-7 md:px-14" style={{backgroundColor: "white"}}>
             <Stack>
               <h1 className="text-center font-unna text-3xl font-bold">Contact Us and Get Our Special Offers</h1>
               <p className="font-unna font-normal text-md italic">* INDICATES REQUIRED FIELD</p>
-              <Grid>
-                <Grid.Col span={6}>
+              <div className = "grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div>
                   <Input.Wrapper className="font-unna font-normal" label="Name">
                     <Input variant="filled"/>
                   </Input.Wrapper>
-                </Grid.Col>
-                <Grid.Col span={6}>
+                </div>
+                <div>
                   <Input.Wrapper className="font-unna font-normal" label="Date of Event">
                     <Input variant="filled"/>
                   </Input.Wrapper>
-                </Grid.Col>
-                <Grid.Col span={6}>
+                </div>
+                <div>
                   <Input.Wrapper className="font-unna font-normal" label="Email">
                     <Input variant="filled"/>
                   </Input.Wrapper>
-                </Grid.Col>
-                <Grid.Col span={6}>
+                </div>
+                <div>
                   <Input.Wrapper className="font-unna font-normal" label="Phone Number">
                     <Input variant="filled"/>
                   </Input.Wrapper>
-                </Grid.Col>
-                <Grid.Col span={6}>
+                </div>
+                <div>
                   <Select
                     variant="filled"
                     label="Select Event Type"
                     data={['Birthday', 'Graduation Party']}
                     className="font-unna font-normal"
                   />
-                </Grid.Col>
-                <Grid.Col span={6}>
+                </div>
+                <div>
                   <NumberInput
                     variant="filled"
                     label="# of Guest"
                     min={1}
                     className="font-unna font-normal"
                   />
-                </Grid.Col>
-                <Grid.Col span={12}>
-                  <Textarea
-                    className="font-unna font-normal"
-                    variant="filled"
-                    label="Message"
-                  />
-                </Grid.Col>
-                <Grid.Col span={12}>
-                  <button className="w-full bg-purple font-unna font-bold mx-auto text-white rounded-md h-10">Submit</button>
-                </Grid.Col>
-              </Grid>
+                </div>
+              </div>
+              <div>
+                <Textarea
+                  className="font-unna font-normal"
+                  variant="filled"
+                  label="Message"
+                />
+              </div>
+              <div>
+                <button className="w-full bg-purple font-unna font-bold mx-auto text-white rounded-md h-10">Submit</button>
+              </div>
             </Stack>
           </div>
       </div>  
