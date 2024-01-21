@@ -4,6 +4,10 @@ import Image from "next/image";
 import { Center, Button, Text } from "@mantine/core";
 import Link from 'next/link';
 
+const openDoorDashLink = () => {
+  window.open('https://www.doordash.com/store/preethi-indian-cuisine-davis-240317/', '_blank');
+};
+
 const Homepage = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
@@ -68,8 +72,44 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <div className="mt-10 w-5/6 mx-auto md:h-[300px] flex justify-center">
+          {isAboveMediumScreens ? (
+            <div className="bg-online-bg bg-contain max-h-[500px] min-w-full bg-no-repeat
+            flex justify-center items-center">
+              <div className="flex flex-col gap-5">
+                <h2 className="font-unna text-gray-50 text-xl">We Are Now Taking Orders On the Phone Or Doordash!</h2>
+                <div className="flex flex-row items-center justify-center w-full gap-10">
+                  <div className="flex flex-col items-center">
+                    <p className="font-unna text-gray-50 text-xl"> Call Us At </p>
+                    <p className="font-unna text-yellow text-xl"> 530-756-2040 </p>
+                  </div>
+                  <div class="h-[150px] bg-yellow w-0.5"></div>
+                  <Image alt="doordash" className="max-w-[150px] max-h-[150px] cursor-pointer"
+                  src={require("../assets/doordash.png")}
+                  onClick={openDoorDashLink}/>
+                </div>
+              </div>  
+            </div>
+          ) : (
+            <div className="bg-purple min-h-[300px] min-w-[300px] rounded-3xl flex justify-center items-center">
+              <div className="flex flex-col gap-5 text-center px-2">
+                <h2 className="font-unna text-gray-50 text-xl">We Are Now Taking Orders On the Phone Or Doordash!</h2>
+                <div className="flex flex-row items-center justify-center w-full gap-10">
+                  <div className="flex flex-col items-center">
+                    <p className="font-unna text-gray-50 text-xl"> Call Us At </p>
+                    <p className="font-unna text-yellow text-xl"> 530-756-2040 </p>
+                  </div>
+                  <div class="h-[150px] bg-yellow w-0.5"></div>
+                  <Image alt="doordash" className="max-w-[100px] max-h-[100px] cursor-pointer"
+                  src={require("../assets/doordash.png")}
+                  onClick={openDoorDashLink}/>
+                </div>
+              </div>  
+          </div>
+          )}
+      </div>
       {/* OUR PROCESS  */}
-      <div className="w-5/6 mx-auto md:h-full mt-10 py-10">
+      <div className="w-5/6 mx-auto md:h-full py-10">
         <div className="flex flex-row space-x-5 justify-center items-center text-center mb-5">
           <Image
             alt="flower"

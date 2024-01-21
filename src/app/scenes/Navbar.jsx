@@ -3,6 +3,10 @@ import { useState } from "react";
 import Link from 'next/link';
 import useMediaQuery from "../hooks/useMediaQuery";
 
+const handleOrderClick = () => {
+    window.open('https://www.doordash.com/store/preethi-indian-cuisine-davis-240317/', '_blank');
+  };
+
 const Navbar = ()  => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
@@ -19,6 +23,13 @@ const Navbar = ()  => {
                     <Link href="/buffet" className="hover:text-dark-yellow transition duration-500"> Buffet </Link>
                     <Link href="/menu" className="hover:text-dark-yellow transition duration-500"> Menu </Link>
                     <Link href="/contact" className="hover:text-dark-yellow transition duration-500"> Contact </Link>
+                        <button
+                            className="bg-dark-yellow hover:bg-white hover:text-dark-yellow 
+                            text-white font-bold py-2 px-4 rounded-full transition duration-500"
+                            onClick={handleOrderClick}
+                        >
+                            Order Online
+                        </button>
                 </div>
             ) : ( <button className="rounded-full bg-purple p-2" 
                 onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -45,6 +56,8 @@ const Navbar = ()  => {
                   <Link href="/buffet" className="hover:text-dark-yellow transition duration-500">Buffet</Link>
                   <Link href="/menu" className="hover:text-dark-yellow transition duration-500">Menu</Link>
                   <Link href="/contact" className="hover:text-dark-yellow transition duration-500">Contact</Link>
+                  <a className="hover:text-dark-yellow transition duration-500 text-white" 
+                    href="https://www.doordash.com/store/preethi-indian-cuisine-davis-240317/" target="_blank">Order Online</a>
                   </div>
                 </div>
             )}

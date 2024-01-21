@@ -135,7 +135,10 @@ const CateringPage = () => {
                 />
               </div>
               <div>
-                <button className="w-full bg-purple font-unna font-bold mx-auto text-white rounded-md h-10">Submit</button>
+                <button className="w-full bg-purple font-unna font-bold 
+                mx-auto text-white rounded-md h-10  hover:bg-slate-50
+                hover:text-purple border border-solid border-purple transition-colors duration-150
+                focus:shadow-outline">Submit</button>
               </div>
             </Stack>
           </div>

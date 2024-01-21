@@ -18,6 +18,7 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('./assets/hero.png')",
         'catering-pattern': "url('./assets/catering-background.png')",
+        'online-bg':"url('./assets/online-bg.png')",
       },
       fontFamily: {
         'unna': ['Unna', 'sans-serif'],

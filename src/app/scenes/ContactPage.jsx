@@ -91,7 +91,7 @@ const ContactPage = () => {
         {/* Image */}
         <div className="md:self-center flex justify-center">
           <Image
-            className="md:h-[520px] md:w-[300px] w-[200px] h-[360px]"
+            className="h-[520px] w-[300px] md:block hidden"
             src={require("../assets/contact_meal.png")}
             alt="sample recipe"
           />
@@ -234,13 +234,17 @@ const ContactPage = () => {
                 pt-2
                 block
                 w-full
-                text-indigo-100
+                text-slate-50
                 bg-purple
                 rounded-lg
                 transition-colors
                 duration-150
                 focus:shadow-outline
-                hover:bg-purple
+                hover:bg-slate-50
+                hover:text-purple
+                border
+                border-solid
+                border-purple
                 "
               >
                 Submit
