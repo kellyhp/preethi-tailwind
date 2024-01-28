@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from 'next/link';
 import useMediaQuery from "../hooks/useMediaQuery";
+import Image from "next/image";
 
 const handleOrderClick = () => {
     window.open('https://www.doordash.com/store/preethi-indian-cuisine-davis-240317/', '_blank');
@@ -23,13 +24,14 @@ const Navbar = ()  => {
                     <Link href="/buffet" className="hover:text-dark-yellow transition duration-500"> Buffet </Link>
                     <Link href="/menu" className="hover:text-dark-yellow transition duration-500"> Menu </Link>
                     <Link href="/contact" className="hover:text-dark-yellow transition duration-500"> Contact </Link>
-                        <button
-                            className="bg-dark-yellow hover:bg-white hover:text-dark-yellow 
-                            text-white font-bold py-2 px-4 rounded-full transition duration-500"
-                            onClick={handleOrderClick}
-                        >
-                            Order Online
-                        </button>
+                    <button
+                        className="bg-dark-yellow hover:bg-white hover:text-dark-yellow 
+                        text-white font-bold py-2 px-4 rounded-full transition duration-500 flex gap-2"
+                        onClick={handleOrderClick}
+                    >
+                        <Image className="my-auto" src={require("../assets/doordash-icon1.png")} width={20}></Image>
+                        Order Online
+                    </button>
                 </div>
             ) : ( <button className="rounded-full bg-purple p-2" 
                 onClick={() => setIsMenuToggled(!isMenuToggled)}>
