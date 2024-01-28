@@ -11,7 +11,7 @@ import useSeasonal from "../hooks/useSeasonal";
 
 const BuffetPage = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1ç060px)");
-  const images = ['carousel-1.png','carousel-2.png','carousel-3.png','carousel-4.png','carousel-5.png' ];
+  const images = ['carousel-4.png','carousel-2.png','carousel-3.png','carousel-1.png','carousel-5.png' ];
   const seasonalMenu = useSeasonal();
   const mainMenu = useMain();
   return (
@@ -35,6 +35,7 @@ const BuffetPage = () => {
             <p className="font-unna font-bold text-white text-base text-center flex items-center justify-center">
                 Buffet Hours <br/>
                 Lunch: 11:30 am to 12:30 pm <br/>
+                Dinner Hours <br/>
                 Dinner: 5:00 pm to 10:00 pm <br/>
             </p>
         </div>

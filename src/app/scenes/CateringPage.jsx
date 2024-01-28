@@ -74,8 +74,9 @@ const CateringPage = () => {
               </div>
             </div>
             <div id="disclaimer" className="mt-6 md:mt-20">
-              Call us to discuss pricing and menu options <br />
-              Phone Number: 530-759-2040
+              Call or email us to discuss pricing and menu options <br />
+              Phone Number: 530-759-2040 <br />
+              Email: PreethiindianD@gmail.com
             </div>
           </div>
           </div>
