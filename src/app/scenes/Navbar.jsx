@@ -10,7 +10,7 @@ const handleOrderClick = () => {
 
 const Navbar = ()  => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
-    const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+    const isAboveSmallScreens = useMediaQuery("(min-width: 870px)");
 
     return(
         <nav className = {`bg-purple z-40 w-full fixed top-0 py-4`}>
