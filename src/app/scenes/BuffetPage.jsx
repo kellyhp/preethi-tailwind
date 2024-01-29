@@ -30,7 +30,7 @@ const BuffetPage = () => {
         </div>
         <div className="w-5/6 mx-auto md:h-full flex md:flex-row flex-col justify-center items-center py-[25px]">
           <Carousel images={images}/>
-          <div className="md:w-[300px] w-[270px] bg-dark-yellow rounded-[32px] h-[220px] flex 
+          <div className="md:min-w-[300px] min-w-[270px] bg-dark-yellow rounded-[32px] min-h-[220px] flex 
           items-center justify-center md:mx-auto mx-0 md:mt-[0px] mt-[90px] px-2">
             <p className="font-unna font-bold text-white text-lg text-center flex items-center justify-center">
                 Buffet Hours <br/>

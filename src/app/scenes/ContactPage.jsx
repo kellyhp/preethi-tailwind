@@ -85,20 +85,20 @@ const ContactPage = () => {
       </div>
       {/* Submission Section */}
       <div
-        className="md:flex 
-        md:items-center md:h-full place-content-center mt-10 gap-x-40 font-unna py-4"
+        className="lg:flex 
+        lg:items-center lg:h-full place-content-center mt-10 gap-x-40 font-unna py-4"
       >
         {/* Image */}
-        <div className="md:self-center flex justify-center">
+        <div className="lg:self-center flex justify-center">
           <Image
-            className="h-[520px] w-[300px] md:block hidden"
+            className="h-[520px] w-[300px] lg:block hidden"
             src={require("../assets/contact_meal.png")}
             alt="sample recipe"
           />
         </div>
         {/* Form */}
-        <div className="md:self-center flex flex-col justify-center">
-          <h1 className="flex text-3xl font-semibold text-center justify-center md:justify-start
+        <div className="lg:self-center flex flex-col justify-center">
+          <h1 className="flex text-3xl font-semibold text-center justify-center lg:justify-start
           mt-2 md:mt-0">
             <div>
               <p class="text-red-600">* </p>

@@ -15,16 +15,16 @@ const Homepage = () => {
       {/* HERO SECTION   */}
       <div
         id="hero"
-        className="md:flex md:justify-between 
-        md:items-center md:h-full py-10 bg-hero-pattern bg-cover w-full
-        min-h-[400px] md:min-h-[600px]"
+        className="lg:flex lg:justify-between 
+        lg:items-center lg:h-full py-10 bg-hero-pattern bg-cover w-full
+        min-h-[400px] lg:min-h-[600px]"
       >
-        <div className="md:flex md:justify-between 
-          md:items-center gap-16 py-10 w-5/6 mx-auto md:h-full">
-        <div className="flex flex-wrap w-full justify-center items-center bg-slate-50/75">
-        <div className="w-full md:w-1/3 p-4 order-2 md:order-1">
-          <div className="md:h-[255px] h-[150px] flex items-center justify-center">
-            <div className="md:w-3/4 w-full h-full text-center border-y-2 border-purple 
+        <div className="lg:flex lg:justify-between 
+          lg:items-center gap-16 py-10 w-5/6 mx-auto lg:h-full">
+        <div className="mt-5 flex flex-wrap w-full justify-center items-center bg-slate-50/75">
+        <div className="w-full lg:w-1/3 p-4 order-2 lg:order-1">
+          <div className="lg:h-[255px] h-[150px] flex items-center justify-center">
+            <div className="lg:w-3/4 w-full h-full text-center border-y-2 border-purple 
             flex items-center justify-center text-2xl font-bold font-unna">
               Buffet Hours <br/>
               11:00 am to 3:00 pm <br/>
@@ -33,24 +33,24 @@ const Homepage = () => {
             </div>
           </div>
         </div>
-          <div className="w-full md:w-1/3 md:p-4 p-1 order-1 md:order-2">
-            <div className="h-full flex items-center justify-center mb-4 md:mb-0">
-              <div className="flex flex-col justify-center items-center md:items-start md:justify-start">
+          <div className="w-full lg:w-1/3 lg:p-4 p-1 order-1 lg:order-2">
+            <div className="h-full flex items-center justify-center mb-4 lg:mb-0">
+              <div className="flex flex-col justify-center items-center lg:items-start lg:justify-start">
                 <div className="flex flex-col justify-center items-center">
-                  <div className="flex md:w-[500px] w-[250px] h-full">
+                  <div className="flex lg:w-[500px] w-[250px] h-full">
                     <Image 
                     alt="preethi-logo"
-                    className="md:w-[500px] md:h-[250px] w-[250px] h-[150px]"
+                    className="lg:mt-0 mt-5 lg:min-w-[500px] lg:max-h-[250px] max-w-[250px] max-h-[150px]"
                     src={require("../assets/preethi-logo.png")}/>
                   </div>
-                  <div className="flex justify-center items-center md:space-x-6 space-x-2">
+                  <div className="flex justify-center items-center lg:space-x-6 space-x-2">
                     <Link href="/menu">
-                    <button className="mt-5 md:text-lg text-sm text-center font-unna font-bold text-white bg-purple
+                    <button className="mt-5 lg:text-lg text-sm text-center font-unna font-bold text-white bg-purple
                         hover:bg-slate-50/75 hover:text-purple py-2 px-4 rounded-full transition duration-300
                         border border-purple">Explore Our Menu</button>
                     </Link>
                     <Link href="/buffet">
-                    <button className="mt-5 md:text-lg text-sm text-center font-unna font-bold text-white bg-purple
+                    <button className="mt-5 lg:text-lg text-sm text-center font-unna font-bold text-white bg-purple
                         hover:bg-slate-50/75 hover:text-purple py-2 px-4 rounded-full transition duration-300
                         border border-purple">Our Buffet Menu</button>
                     </Link>
@@ -59,9 +59,9 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/3 p-4 order-3">
-              <div className="md:h-[255px] h-[150px] flex items-center justify-center">
-                <div className="md:w-3/4 w-full h-full text-center border-y-2 border-purple 
+            <div className="w-full lg:w-1/3 p-4 order-3">
+              <div className="lg:h-[255px] h-[150px] flex items-center justify-center">
+                <div className="lg:w-3/4 w-full h-full text-center border-y-2 border-purple 
                   flex items-center justify-center text-2xl font-bold font-unna">
                   Open Daily <br/>
                   715 2nd St, Davis, <br/>
@@ -148,7 +148,7 @@ const Homepage = () => {
                 />
               </div>
               <div className="px-4 md:px-16">
-                <p className="mt-5 mb-5 font-bold text-4xl"> Organic </p>
+                <p className="mt-5 mb-5 font-bold md:text-4xl text-3xl"> Organic </p>
                 <p className="text-2xl">
                   We take pride in every dish, drink, dosa, and dessert we make
                   and use organic ingredients
@@ -172,7 +172,7 @@ const Homepage = () => {
                 />
               </div>
               <div className="px-4 md:px-16">
-                <p className="mt-5 mb-5 font-bold text-4xl"> Homemade </p>
+                <p className="mt-5 mb-5 font-bold md:text-4xl text-3xl"> Homemade </p>
                 <p className="text-2xl">
                   Our two primary chefs are made up of a husband and wife team
                   who lovingly make homemade dishes
@@ -196,7 +196,7 @@ const Homepage = () => {
                 />
               </div>
               <div className="px-4 md:px-16">
-                <p className="mt-5 mb-5 font-bold text-4xl"> Made-To-Order </p>
+                <p className="mt-5 mb-5 font-bold md:text-4xl text-3xl"> Made-To-Order </p>
                 <p className="text-2xl">
                   Each individual dish are made-to-order and prepared correctly
                   according to traditions
