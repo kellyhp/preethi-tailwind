@@ -15,7 +15,7 @@ const ContactPage = () => {
               Contact Us
             <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto"/>
           </p>
-          <p className="w-full font-unna text-white font-bold text-xl text-center">
+          <p className="w-full font-unna text-white font-bold md:text-2xl text-lg text-center">
             If you have any questions or concerns, feel free to send us a form down below!
             Looking to make an order? Feel free to call us!
           </p>
@@ -32,10 +32,10 @@ const ContactPage = () => {
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
                   >
-                    <div className="font-bold text-purple text-lg">
+                    <div className="font-bold text-purple text-xl">
                       Working Hours
                     </div>
-                    <div className="text-black md:text-base text-sm md:text-start text-center">
+                    <div className="text-black md:text-lg text-base md:text-start text-center">
                     Open daily <br/>
                     Monday to Sunday <br/>
                     Buffet: 11 am to 3 pm <br/>
@@ -49,10 +49,10 @@ const ContactPage = () => {
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
                   >
-                    <div className="font-bold text-purple text-lg">
+                    <div className="font-bold text-purple text-xl">
                       Location
                     </div>
-                    <div className="text-black md:text-base text-sm md:text-start text-center">
+                    <div className="text-black md:text-lg text-base md:text-start text-center">
                     715 2nd St <br/>
                     Davis, CA  <br/>
                     95616
@@ -65,10 +65,10 @@ const ContactPage = () => {
                     className="flex md:items-start md:justify-start
                     justify-center items-center font-unna flex-col"
                   >
-                    <div className="font-bold text-purple text-lg">
+                    <div className="font-bold text-purple text-xl">
                       Contact
                     </div>
-                    <div className="text-black md:text-base text-sm md:text-start text-center">
+                    <div className="text-black md:text-lg text-base md:text-start text-center">
                     530-759-2040 <br/>
                     PreethiindianD@gmail.com
                     </div>
@@ -244,6 +244,7 @@ const ContactPage = () => {
                 hover:text-purple
                 border
                 border-solid
+                text-lg
                 border-purple
                 "
               >

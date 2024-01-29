@@ -132,6 +132,7 @@ button:disabled {
   font-size: 48px;
   color: #ffffff;
   text-align: center;
+
 }
 
 .grid-container {
@@ -145,12 +146,13 @@ button:disabled {
   align-items: center;
   font-family: "Unna";
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .grid-title {
   font-family: "Unna";
   color: #ffc956;
+  font-size: 24px;
 }
 
 #disclaimer {

@@ -23,16 +23,16 @@ const BuffetPage = () => {
               Our Buffet Services
             <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto"/>
           </p>
-          <p className="w-full font-unna text-white font-bold text-xl text-center">
+          <p className="w-full font-unna text-white font-bold md:text-2xl text-lg text-center">
           Savor the essence of each season with our curated selection of dishes that celebrate the freshest <br /> 
           ingredients. Our chefs offer a symphony of flavors provided in our main and seasonal courses.
           </p>
         </div>
         <div className="w-5/6 mx-auto md:h-full flex md:flex-row flex-col justify-center items-center py-[25px]">
           <Carousel images={images}/>
-          <div className="md:w-[300px] w-[250px] bg-dark-yellow rounded-[32px] h-[200px] flex 
-          items-center justify-center md:mx-auto mx-0 md:mt-[0px] mt-[90px]">
-            <p className="font-unna font-bold text-white text-base text-center flex items-center justify-center">
+          <div className="md:w-[300px] w-[270px] bg-dark-yellow rounded-[32px] h-[220px] flex 
+          items-center justify-center md:mx-auto mx-0 md:mt-[0px] mt-[90px] px-2">
+            <p className="font-unna font-bold text-white text-lg text-center flex items-center justify-center">
                 Buffet Hours <br/>
                 Lunch: 11:30 am to 12:30 pm <br/>
                 Dinner Hours <br/>
@@ -46,7 +46,7 @@ const BuffetPage = () => {
           <div className="w-full md:w-1/2 p-4 h-full">
             <div className="h-full flex flex-row md:flex-col items-center justify-center mb-4 md:mb-0">
               <div className="w-full flex flex-col md:items-start md:justify-start justify-center items-center">
-                <div className="font-bold font-unna border-y-2 border-yellow margin-b-2.5 text-base">
+                <div className="font-bold font-unna border-y-2 border-yellow margin-b-2.5 text-xl">
                   MENU
                 </div>
                 <div className="font-unna margin-b-4 md:text-[40px] text-[32px] font-bold text-center md:text-start">

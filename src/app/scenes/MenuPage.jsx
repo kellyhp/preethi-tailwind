@@ -14,13 +14,13 @@ const MenuPage = () => {
               Discover Our Menu
             <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto"/>
           </p>
-          <p className="w-full font-unna text-white font-bold text-xl text-center md:mb-[66px] mb-[33px]">
+          <p className="w-full font-unna text-white font-bold md:text-2xl text-lg text-center md:mb-[66px] mb-[33px]">
           Our menu is a celebration of the vibrant and diverse flavors of India, curated to tantalize your taste <br />
           buds. Explore our menu, filled with tantalizing appetizers, aromatic curries, and decadent desserts.
           </p>
         </div>
-        <div className="md:w-[500px] w-[270px] bg-dark-yellow rounded-[32px] h-[200px] flex items-center justify-center mx-auto">
-            <p className="font-unna font-bold text-white md:text-base text-sm text-center flex items-center justify-center">
+        <div className="md:w-[500px] w-[270px] bg-dark-yellow rounded-[32px] h-[250px] flex items-center justify-center mx-auto px-4">
+            <p className="font-unna font-bold text-white md:text-lg text-base text-center flex items-center justify-center">
                 Note: We use nuts & diary products in the preparation for food. 
                 Please let us know if you are allergic to any items. Ask for mild, 
                 spicy, or extra spicy when you order your food & enjoy your 
