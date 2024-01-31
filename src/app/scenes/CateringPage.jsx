@@ -17,9 +17,8 @@ const CateringPage = () => {
               Catering Services
               <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto" />
             </p>
-            <p className="md:w-1/2 sm:w-full font-unna text-white font-bold md:text-2xl text-lg text-center">
-              Ready to Elevate Your Event? Contact us today to discuss your event,
-            customize your
+            <p className="w-full font-unna text-white font-bold md:text-2xl text-lg text-center">
+              Ready to Elevate Your Event? Contact us today to discuss your event, customize your
               package, and ensure your occasion is nothing short of extraordinary.
             </p>
           <div id="catering">

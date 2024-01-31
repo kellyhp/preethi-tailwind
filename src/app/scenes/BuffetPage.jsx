@@ -28,17 +28,17 @@ const BuffetPage = () => {
           ingredients. Our chefs offer a symphony of flavors provided in our main and seasonal courses.
           </p>
         </div>
-        <div className="w-5/6 mx-auto md:h-full flex md:flex-row flex-col justify-center items-center py-[25px]">
+        <div className="w-5/6 mx-auto xl:h-full flex xl:flex-row flex-col justify-center items-center py-[25px]">
           <Carousel images={images}/>
           <div className="md:min-w-[300px] min-w-[270px] bg-dark-yellow rounded-[32px] min-h-[220px] flex 
-          items-center justify-center md:mx-auto mx-0 md:mt-[0px] mt-[90px] px-2">
+          items-center justify-center md:mx-auto mx-0 xl:mt-[0px] mt-[130px]">
             <p className="font-unna font-bold text-white text-lg text-center flex items-center justify-center">
                 Buffet Hours <br/>
                 Lunch: 11:30 am to 12:30 pm <br/>
                 Dinner Hours <br/>
                 Dinner: 5:00 pm to 10:00 pm <br/>
             </p>
-        </div>
+          </div>
         </div>
       </div>
       <div className="w-5/6 mx-auto md:h-full mt-10 py-10">
