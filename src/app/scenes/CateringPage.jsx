@@ -17,13 +17,12 @@ const CateringPage = () => {
               Catering Services
               <div className="bg-dark-yellow w-1/3 h-0.5 mx-auto" />
             </p>
-            <p className="md:w-1/2 sm:w-full font-unna text-white font-bold text-xl text-center">
-              Ready to Elevate Your Event? Contact us today to discuss your event,
-            customize your
+            <p className="w-full font-unna text-white font-bold md:text-2xl text-lg text-center">
+              Ready to Elevate Your Event? Contact us today to discuss your event, customize your
               package, and ensure your occasion is nothing short of extraordinary.
             </p>
           <div id="catering">
-            <div className="header">What We Offer</div>
+            <div className="font-unna md:text-5xl text-3xl text-center text-white">What We Offer</div>
             <div className="flex md:flex-row flex-col w-full mx-auto justify-center items-center mt-6 md:mt-20">
               <div className="grid-item md:px-3 px-3 md:py-0 py-5">
                 <Center>
@@ -85,8 +84,8 @@ const CateringPage = () => {
       <div id="hero"
         className="md:flex md:justify-between 
         md:items-center md:h-full py-10 bg-catering-pattern bg-cover w-full
-        min-h-[400px] md:min-h-[600px]">
-          <div className="mx-auto w-5/6 md:w-2/3 py-5 px-7 md:px-14" style={{backgroundColor: "white"}}>
+        min-h-[500px] md:min-h-[700px]">
+          <div className="mx-auto w-5/6 md:w-2/3 py-10 px-7 md:px-14" style={{backgroundColor: "white"}}>
             <Stack>
               <h1 className="text-center font-unna text-3xl font-bold">Contact Us and Get Our Special Offers</h1>
               <p className="font-unna font-normal text-md italic">* INDICATES REQUIRED FIELD</p>
@@ -137,7 +136,7 @@ const CateringPage = () => {
               </div>
               <div>
                 <button className="w-full bg-purple font-unna font-bold 
-                mx-auto text-white rounded-md h-10  hover:bg-slate-50
+                mx-auto text-white rounded-md h-10  hover:bg-slate-50 text-lg
                 hover:text-purple border border-solid border-purple transition-colors duration-150
                 focus:shadow-outline">Submit</button>
               </div>

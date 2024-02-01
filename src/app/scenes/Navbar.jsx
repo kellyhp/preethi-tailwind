@@ -10,15 +10,15 @@ const handleOrderClick = () => {
 
 const Navbar = ()  => {
     const [isMenuToggled, setIsMenuToggled] = useState(false);
-    const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+    const isAboveSmallScreens = useMediaQuery("(min-width: 870px)");
 
     return(
         <nav className = {`bg-purple z-40 w-full fixed top-0 py-4`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
-            <h4 className="font-unna text-3l font-bold"></h4>
+            <h4 className="font-unna font-bold"></h4>
             {/* DESKTOP NAV */}
             {isAboveSmallScreens ? (
-                <div className="text-white flex justify-between gap-16 items-center font-unna text-base font-bold">
+                <div className="text-white flex justify-between gap-16 items-center font-unna text-lg font-bold">
                     <Link href="/" className="hover:text-dark-yellow transition duration-500"> Home </Link>
                     <Link href="/catering" className="hover:text-dark-yellow transition duration-500"> Catering </Link>
                     <Link href="/buffet" className="hover:text-dark-yellow transition duration-500"> Buffet </Link>

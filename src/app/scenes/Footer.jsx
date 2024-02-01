@@ -16,19 +16,19 @@ const Footer = () => {
         <div className="basis-full md:basis-1/4 px-3 flex md:justify-start justify-center">
           <div className="flex font-unna text-white justify-start items-start text-start">
             <div className="justify-start">
-              <p className="font-bold text-lg mt-5 mb-5 border-y-2 border-dark-yellow"> CONTACT </p>
-              <p> 715 2nd St, Davis, CA , 95616 </p>
-              <p><span className="font-bold text-yellow">Call: </span> 530-759-2040</p>
-              <p><span className="font-bold text-yellow">Email: </span>PreethiindianD@gmail.com</p>
+              <p className="font-bold text-xl mt-5 mb-5 border-y-2 border-dark-yellow"> CONTACT </p>
+              <p className="text-lg"> 715 2nd St, Davis, CA , 95616 </p>
+              <p className="text-lg"><span className="font-bold text-yellow text-xl">Call: </span> 530-759-2040</p>
+              <p className="text-lg"><span className="font-bold text-yellow text-xl">Email: </span>PreethiindianD@gmail.com</p>
             </div>
           </div>
           </div>
         <div className="basis-full md:basis-1/4 px-3 flex md:justify-start justify-center">
           <div className="flex font-unna text-white justify-start items-start text-start">
             <div className="justify-start">
-              <p className="font-bold text-lg mt-5 mb-5 border-y-2 border-dark-yellow"> WORKING HOURS </p>
-              <p><span className="font-bold text-yellow">Buffet: </span> 11:00 am to 3:00 pm </p>
-              <p><span className="font-bold text-yellow">Dinner: </span> 5:00 pm to 10:00 pm </p>
+              <p className="font-bold text-xl mt-5 mb-5 border-y-2 border-dark-yellow"> WORKING HOURS </p>
+              <p className="text-lg"><span className="font-bold text-yellow text-xl">Buffet: </span> 11:00 am to 3:00 pm </p>
+              <p className="text-lg"><span className="font-bold text-yellow text-xl">Dinner: </span> 5:00 pm to 10:00 pm </p>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Footer = () => {
         md:items-center mx-auto md:h-full">
           <div className="w-full flex flex-row">
             <div className="basis-1/2 justify-start">
-              <p className="font-unna text-lg text-white">&copy; 2023 | All Rights Reserved.</p>
+              <p className="font-unna text-xl text-white">&copy; 2023 | All Rights Reserved.</p>
             </div>
             <div className="basis-1/2 flex justify-end justify-items-end">
               <div className="flex flex-row space-x-5">
