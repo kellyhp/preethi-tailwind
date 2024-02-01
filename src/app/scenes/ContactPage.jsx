@@ -105,7 +105,7 @@ const ContactPage = () => {
             </div>
             Indicates Required Field
           </h1>
-          <form action="https://formsubmit.co/your@email.com" method="POST" className="md:mt-6 mt-2 shadow-none rounded-none">
+          <form action="https://formsubmit.co/PreethiindianD@gmail.com" method="POST" className="md:mt-6 mt-2 shadow-none rounded-none">
             <div className="mb-2">
               <label>
                 <div className="flex">
