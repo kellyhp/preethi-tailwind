@@ -86,6 +86,7 @@ const CateringPage = () => {
         md:items-center md:h-full py-10 bg-catering-pattern bg-cover w-full
         min-h-[500px] md:min-h-[700px]">
           <div className="mx-auto w-5/6 md:w-2/3 py-10 px-7 md:px-14" style={{backgroundColor: "white"}}>
+          <form action="https://formsubmit.co/your@email.com" method="POST" />
             <Stack>
               <h1 className="text-center font-unna text-3xl font-bold">Contact Us and Get Our Special Offers</h1>
               <p className="font-unna font-normal text-md italic">* INDICATES REQUIRED FIELD</p>
@@ -141,6 +142,7 @@ const CateringPage = () => {
                 focus:shadow-outline">Submit</button>
               </div>
             </Stack>
+          <form action="https://formsubmit.co/PreethiindianD@gmail.com" method="POST"/>
           </div>
       </div>  
     </div>
