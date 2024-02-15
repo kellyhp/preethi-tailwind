@@ -83,9 +83,9 @@ const CateringPage = () => {
       </div>
       <div id="hero"
         className="md:flex md:justify-between 
-        md:items-center md:h-full py-10 bg-catering-pattern bg-cover w-full
+        md:items-center md:h-full bg-catering-pattern bg-cover w-full
         min-h-[500px] md:min-h-[700px]">
-          <div className="mx-auto w-5/6 md:w-2/3 py-10 px-7 md:px-14" style={{backgroundColor: "white"}}>
+          <div className="mx-auto w-5/6 md:w-2/3 px-7 md:px-14" style={{backgroundColor: "white"}}>
           <form action="https://formsubmit.co/your@email.com" method="POST" />
             <Stack>
               <h1 className="text-center font-unna text-3xl font-bold">Contact Us and Get Our Special Offers</h1>
